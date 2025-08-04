@@ -273,29 +273,31 @@ export const volunteerWork: VolunteerWork[] = [
 // Real projects showcase
 export const projects: Project[] = [
   {
-    id: 'portfolio-website',
-    title: 'Portfolio Website',
-    description: 'Professional portfolio website showcasing development skills and experience',
-    longDescription: 'A modern, responsive portfolio website built with Next.js and TypeScript. Features dark mode, dynamic skills showcase, and comprehensive project documentation. Optimized for performance and SEO with clean, professional design.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React', 'Vercel'],
+    id: 'entertainer-website',
+    title: 'Personal Website of an Entertainer',
+    description: 'Professional website for a Korean entertainer showcasing music, acting career, and fan engagement',
+    longDescription: 'A beautifully designed personal website for IU (Lee Ji-eun), a Korean artist. Features elegant design with gradient backgrounds, professional portfolio sections, and multimedia content showcase. Built with modern web technologies and optimized for fan engagement.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Modern UI/UX'],
     features: [
-      'Dark mode by default with theme toggle',
-      'Dynamic skills showcase with 60+ technologies',
-      'Responsive design optimized for all devices',
-      'Performance optimized with Next.js',
-      'SEO optimization and metadata',
-      'Interactive animations and transitions',
-      'Professional typography and design system'
+      'Elegant gradient background design',
+      'Professional artist portfolio showcase',
+      'Responsive design for all devices',
+      'Multi-page navigation system',
+      'Interactive user interface',
+      'Professional typography and layout',
+      'Fan-focused content organization',
+      'Modern web design principles'
     ],
-    githubUrl: 'https://github.com/yorkyorkex/my-portfolio-website',
-    liveUrl: 'https://my-portfolio-website-livid-two.vercel.app/',
+    githubUrl: 'https://github.com/yorkyorkex/my-app',
+    liveUrl: 'https://my-app-bay-six-92.vercel.app/',
+    imageUrl: '/images/entertainer-website.svg',
     category: 'web',
     status: 'completed',
     highlights: [
-      'Modern Next.js 14 architecture',
-      'Comprehensive skill showcase',
-      'Professional design system',
-      'Performance optimized'
+      'Professional entertainer showcase',
+      'Elegant visual design',
+      'Fan engagement focused',
+      'Modern web technologies'
     ]
   },
   {
@@ -316,6 +318,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/yorkyorkex/project-managment-app',
     liveUrl: 'https://project-managment-app-theta.vercel.app/',
+    imageUrl: '/images/project-management.svg',
     category: 'fullstack',
     status: 'completed',
     highlights: [
@@ -343,6 +346,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/yorkyorkex/todo-mobile-app',
     liveUrl: 'https://todo-mobile-app.vercel.app/',
+    imageUrl: '/images/task-management.svg',
     category: 'mobile',
     status: 'completed',
     highlights: [
@@ -350,6 +354,33 @@ export const projects: Project[] = [
       'Progressive Web App',
       'Offline-first approach',
       'Intuitive task management'
+    ]
+  },
+  {
+    id: 'portfolio-website',
+    title: 'Portfolio Website',
+    description: 'Professional portfolio website showcasing development skills and experience',
+    longDescription: 'A modern, responsive portfolio website built with Next.js and TypeScript. Features dark mode, dynamic skills showcase, and comprehensive project documentation. Optimized for performance and SEO with clean, professional design.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React', 'Vercel'],
+    features: [
+      'Dark mode by default with theme toggle',
+      'Dynamic skills showcase with 60+ technologies',
+      'Responsive design optimized for all devices',
+      'Performance optimized with Next.js',
+      'SEO optimization and metadata',
+      'Interactive animations and transitions',
+      'Professional typography and design system'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/my-portfolio-website',
+    liveUrl: 'https://my-portfolio-website-livid-two.vercel.app/',
+    imageUrl: '/images/portfolio-website.svg',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Modern Next.js 14 architecture',
+      'Comprehensive skill showcase',
+      'Professional design system',
+      'Performance optimized'
     ]
   }
 ];

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { ExternalLink, Github, Code, Smartphone, Box, Server, Globe, Filter } from 'lucide-react'
 import Card from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
@@ -71,18 +72,31 @@ const Projects = () => {
               hover
             >
               {/* Project Image/Placeholder */}
-              <div className="h-48 bg-gradient-to-br from-primary-500 to-purple-600 relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-                  <div className="text-white text-6xl opacity-50">
-                    {getCategoryIcon(project.category)}
+              <div className="h-48 relative overflow-hidden bg-gradient-to-br from-primary-500 to-purple-600">
+                {project.imageUrl ? (
+                  <>
+                    <Image 
+                      src={project.imageUrl} 
+                      alt={project.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-black/10 hover:bg-black/20 transition-colors duration-300 z-10"></div>
+                  </>
+                ) : (
+                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+                    <div className="text-white text-6xl opacity-50">
+                      {getCategoryIcon(project.category)}
+                    </div>
                   </div>
-                </div>
-                <div className="absolute top-4 left-4">
+                )}
+                <div className="absolute top-4 left-4 z-20">
                   <span className={`px-2 py-1 rounded-full text-xs font-medium ${getProjectStatusColor(project.status)}`}>
                     {project.status.charAt(0).toUpperCase() + project.status.slice(1).replace('-', ' ')}
                   </span>
                 </div>
-                <div className="absolute top-4 right-4 flex gap-2">
+                <div className="absolute top-4 right-4 flex gap-2 z-20">
                   <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
                     {getCategoryIcon(project.category)}
                   </div>

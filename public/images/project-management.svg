@@ -1,0 +1,67 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 深色背景 -->
+  <rect width="800" height="600" fill="#1f2937"/>
+  
+  <!-- 側邊欄 -->
+  <rect x="0" y="0" width="200" height="600" fill="#374151"/>
+  
+  <!-- 側邊欄標題 -->
+  <text x="20" y="35" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold">ProjectHub</text>
+  
+  <!-- 側邊欄導航 -->
+  <rect x="10" y="60" width="180" height="35" rx="5" fill="#4f46e5"/>
+  <text x="20" y="82" font-family="Arial, sans-serif" font-size="12" fill="white">📊 Dashboard</text>
+  
+  <text x="20" y="115" font-family="Arial, sans-serif" font-size="12" fill="#9ca3af">👥 Users</text>
+  <text x="20" y="145" font-family="Arial, sans-serif" font-size="12" fill="#9ca3af">📁 Projects</text>
+  <text x="20" y="175" font-family="Arial, sans-serif" font-size="12" fill="#9ca3af">⚙️ Settings</text>
+  
+  <!-- 主要內容區域 -->
+  <rect x="200" y="0" width="600" height="60" fill="#111827"/>
+  <text x="220" y="35" font-family="Arial, sans-serif" font-size="24" fill="white" font-weight="bold">Dashboard</text>
+  
+  <!-- 用戶頭像區域 -->
+  <circle cx="720" cy="30" r="15" fill="#8b5cf6"/>
+  <text x="745" y="35" font-family="Arial, sans-serif" font-size="12" fill="white">Demo User</text>
+  
+  <!-- Users 標題 -->
+  <text x="220" y="120" font-family="Arial, sans-serif" font-size="20" fill="white" font-weight="bold">Users</text>
+  <text x="220" y="145" font-family="Arial, sans-serif" font-size="12" fill="#9ca3af">Manage your team members and their permissions.</text>
+  
+  <!-- Add User 按鈕 -->
+  <rect x="650" y="100" width="80" height="30" rx="5" fill="#6366f1"/>
+  <text x="690" y="120" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Add User</text>
+  
+  <!-- 搜索框 -->
+  <rect x="220" y="170" width="200" height="30" rx="5" fill="#374151"/>
+  <text x="230" y="190" font-family="Arial, sans-serif" font-size="11" fill="#9ca3af">Search users...</text>
+  
+  <!-- 用戶表格標題 -->
+  <rect x="220" y="220" width="560" height="35" fill="#374151"/>
+  <text x="240" y="242" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">User</text>
+  <text x="400" y="242" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">Role</text>
+  <text x="500" y="242" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">Status</text>
+  <text x="600" y="242" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">Last Active</text>
+  <text x="720" y="242" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">Actions</text>
+  
+  <!-- 用戶行 -->
+  <circle cx="250" cy="275" r="15" fill="#3b82f6"/>
+  <text x="255" y="280" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">JD</text>
+  <text x="275" y="280" font-family="Arial, sans-serif" font-size="11" fill="white">John Doe</text>
+  
+  <rect x="390" y="265" width="50" height="20" rx="10" fill="#f59e0b"/>
+  <text x="415" y="278" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">Admin</text>
+  
+  <rect x="480" y="265" width="45" height="20" rx="10" fill="#10b981"/>
+  <text x="502" y="278" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">active</text>
+  
+  <text x="580" y="280" font-family="Arial, sans-serif" font-size="11" fill="#9ca3af">2 hours ago</text>
+  
+  <!-- 更多用戶行 -->
+  <circle cx="250" cy="315" r="15" fill="#8b5cf6"/>
+  <text x="255" y="320" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">JS</text>
+  <text x="275" y="320" font-family="Arial, sans-serif" font-size="11" fill="white">Jane Smith</text>
+  
+  <rect x="390" y="305" width="40" height="20" rx="10" fill="#6b7280"/>
+  <text x="410" y="318" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">User</text>
+</svg>

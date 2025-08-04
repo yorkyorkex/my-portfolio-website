@@ -1,0 +1,40 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 漸層背景模擬 IU 網站的紫色背景 -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333ea;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#grad1)"/>
+  
+  <!-- 頂部導航條 -->
+  <rect x="0" y="0" width="800" height="60" fill="rgba(255,255,255,0.1)"/>
+  <text x="150" y="35" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold">IU'S FANTASY WORLD</text>
+  
+  <!-- 導航項目 -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">Home</text>
+  <text x="450" y="35" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">About</text>
+  <text x="500" y="35" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">Portfolio</text>
+  <text x="570" y="35" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">Contact</text>
+  
+  <!-- 主要內容區域 -->
+  <text x="50" y="150" font-family="Arial, sans-serif" font-size="36" fill="white" font-weight="bold">HELLO</text>
+  <text x="50" y="200" font-family="Arial, sans-serif" font-size="24" fill="white">I'm IU (Lee Ji-eun)</text>
+  <text x="50" y="230" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.9)">a Korean Artist</text>
+  
+  <!-- 個人照片圓形區域 -->
+  <circle cx="600" cy="350" r="80" fill="rgba(255,255,255,0.2)"/>
+  <text x="600" y="355" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Profile Photo</text>
+  
+  <!-- 按鈕 -->
+  <rect x="50" y="450" width="120" height="40" rx="20" fill="rgba(138, 92, 246, 0.8)"/>
+  <text x="110" y="475" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">About Me</text>
+  
+  <rect x="180" y="450" width="120" height="40" rx="20" fill="rgba(255,255,255,0.2)"/>
+  <text x="240" y="475" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Portfolio</text>
+  
+  <!-- 底部版權 -->
+  <text x="400" y="580" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.6)" text-anchor="middle">© 2024 IU'S FANTASY WORLD. All rights reserved.</text>
+</svg>
