@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { ExternalLink, Github, Code, Smartphone, Box, Server, Globe, Filter } from 'lucide-react'
 import Card from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
-import { projectTemplates } from '@/lib/data'
+import { projects } from '@/lib/data'
 import { getProjectStatusColor } from '@/lib/utils'
 
 const Projects = () => {
@@ -13,18 +13,20 @@ const Projects = () => {
   const categories = [
     { id: 'all', label: 'All Projects', icon: <Globe className="w-4 h-4" /> },
     { id: 'web', label: 'Web Apps', icon: <Code className="w-4 h-4" /> },
+    { id: 'fullstack', label: 'Full-Stack', icon: <Server className="w-4 h-4" /> },
     { id: 'mobile', label: 'Mobile Apps', icon: <Smartphone className="w-4 h-4" /> },
     { id: 'ar-vr', label: 'AR/VR', icon: <Box className="w-4 h-4" /> },
     { id: 'backend', label: 'Backend', icon: <Server className="w-4 h-4" /> }
   ]
 
   const filteredProjects = activeFilter === 'all' 
-    ? projectTemplates 
-    : projectTemplates.filter(project => project.category === activeFilter)
+    ? projects 
+    : projects.filter(project => project.category === activeFilter)
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
       case 'web': return <Code className="w-5 h-5" />
+      case 'fullstack': return <Server className="w-5 h-5" />
       case 'mobile': return <Smartphone className="w-5 h-5" />
       case 'ar-vr': return <Box className="w-5 h-5" />
       case 'backend': return <Server className="w-5 h-5" />

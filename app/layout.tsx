@@ -35,6 +35,20 @@ export default function RootLayout({
     <html lang="en" className="dark scroll-smooth">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Prevent theme flashing by setting theme before page renders
+              try {
+                const theme = localStorage.getItem('theme') || 'dark';
+                document.documentElement.classList.toggle('dark', theme === 'dark');
+              } catch (e) {
+                // Fallback to dark mode if localStorage is not available
+                document.documentElement.classList.add('dark');
+              }
+            `,
+          }}
+        />
       </head>
       <body className="antialiased">
         {children}

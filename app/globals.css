@@ -25,6 +25,16 @@ html:not(.dark) {
 
 html {
   scroll-behavior: smooth;
+  /* Prevent flash of unstyled content */
+  color-scheme: dark;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html:not(.dark) {
+  color-scheme: light;
 }
 
 body {
@@ -36,6 +46,8 @@ body {
     )
     rgb(var(--background-start-rgb));
   font-family: 'Inter', system-ui, sans-serif;
+  /* Smooth transitions for theme changes */
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 /* Custom scrollbar */
@@ -116,4 +128,31 @@ body {
 /* Container max width */
 .container-width {
   @apply max-w-7xl mx-auto;
+}
+
+/* Prevent context menu issues and improve stability */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent text selection issues that might cause right-click problems */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Smooth page transitions to prevent flashing */
+.page-transition {
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Prevent flash during hydration */
+html {
+  background-color: #0f172a; /* Dark background to match dark mode */
+}
+
+html:not(.dark) {
+  background-color: #ffffff; /* Light background for light mode */
 }

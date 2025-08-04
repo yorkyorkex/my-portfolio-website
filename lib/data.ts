@@ -270,69 +270,86 @@ export const volunteerWork: VolunteerWork[] = [
   }
 ];
 
-// Project templates for future additions
-export const projectTemplates: Project[] = [
+// Real projects showcase
+export const projects: Project[] = [
   {
-    id: 'template-web',
-    title: 'Web Application Template',
-    description: 'Modern web application built with React and Next.js',
-    longDescription: 'A comprehensive web application featuring responsive design, user authentication, and real-time data management.',
-    technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Firebase'],
+    id: 'portfolio-website',
+    title: 'Portfolio Website',
+    description: 'Professional portfolio website showcasing development skills and experience',
+    longDescription: 'A modern, responsive portfolio website built with Next.js and TypeScript. Features dark mode, dynamic skills showcase, and comprehensive project documentation. Optimized for performance and SEO with clean, professional design.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React', 'Vercel'],
     features: [
-      'Responsive design for all devices',
-      'User authentication and authorization',
-      'Real-time data synchronization',
-      'Progressive Web App capabilities',
-      'SEO optimization'
+      'Dark mode by default with theme toggle',
+      'Dynamic skills showcase with 60+ technologies',
+      'Responsive design optimized for all devices',
+      'Performance optimized with Next.js',
+      'SEO optimization and metadata',
+      'Interactive animations and transitions',
+      'Professional typography and design system'
     ],
+    githubUrl: 'https://github.com/yorkyorkex/my-portfolio-website',
+    liveUrl: 'https://my-portfolio-website-livid-two.vercel.app/',
     category: 'web',
-    status: 'planned',
+    status: 'completed',
     highlights: [
-      'Modern tech stack',
-      'Performance optimized',
-      'Scalable architecture'
+      'Modern Next.js 14 architecture',
+      'Comprehensive skill showcase',
+      'Professional design system',
+      'Performance optimized'
     ]
   },
   {
-    id: 'template-mobile',
-    title: 'Mobile App Template',
-    description: 'Cross-platform mobile application',
-    longDescription: 'Cross-platform mobile application with native performance and modern UI.',
-    technologies: ['React Native', 'TypeScript', 'Firebase', 'Redux'],
+    id: 'team-project-management',
+    title: 'Team Project Management System',
+    description: 'Comprehensive project management application for team collaboration',
+    longDescription: 'A full-stack project management system designed for teams to collaborate effectively. Features real-time updates, task management, team communication, and project tracking with modern UI/UX design.',
+    technologies: ['React', 'Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS', 'Real-time Database'],
     features: [
-      'Cross-platform compatibility',
-      'Native performance',
+      'Real-time project collaboration',
+      'Task creation and assignment',
+      'Team member management',
+      'Project progress tracking',
+      'Interactive dashboard',
+      'Responsive design',
+      'User authentication and authorization',
+      'Notification system'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/project-managment-app',
+    liveUrl: 'https://project-managment-app-theta.vercel.app/',
+    category: 'fullstack',
+    status: 'completed',
+    highlights: [
+      'Real-time collaboration features',
+      'Comprehensive project tracking',
+      'Modern team management tools',
+      'Scalable Firebase backend'
+    ]
+  },
+  {
+    id: 'task-management-mobile',
+    title: 'Task Management Mobile Application',
+    description: 'Mobile-optimized task management application with modern UX',
+    longDescription: 'A mobile-first task management application built with modern web technologies. Features intuitive touch interface, offline capability, and seamless task organization for productivity on-the-go.',
+    technologies: ['React', 'PWA', 'TypeScript', 'CSS3', 'Local Storage', 'Service Workers'],
+    features: [
+      'Mobile-first responsive design',
+      'Touch-optimized interface',
       'Offline functionality',
-      'Push notifications',
-      'Biometric authentication'
+      'Task creation and organization',
+      'Progress tracking',
+      'Category management',
+      'Priority settings',
+      'Dark/Light theme support'
     ],
+    githubUrl: 'https://github.com/yorkyorkex/todo-mobile-app',
+    liveUrl: 'https://todo-mobile-app.vercel.app/',
     category: 'mobile',
-    status: 'planned',
+    status: 'completed',
     highlights: [
-      'Native performance',
-      'Cross-platform solution',
-      'Modern UX design'
-    ]
-  },
-  {
-    id: 'template-arvr',
-    title: 'AR/VR Experience Template',
-    description: 'Immersive AR/VR application built with Unity',
-    longDescription: 'Immersive augmented and virtual reality experience for educational and entertainment purposes.',
-    technologies: ['Unity', 'C#', 'AR Foundation', 'XR Toolkit'],
-    features: [
-      'Immersive 3D environments',
-      'Hand tracking and gestures',
-      'Multi-platform support',
-      'Educational content',
-      'Interactive elements'
-    ],
-    category: 'ar-vr',
-    status: 'planned',
-    highlights: [
-      'Cutting-edge technology',
-      'Educational impact',
-      'Immersive experience'
+      'Mobile-optimized UX',
+      'Progressive Web App',
+      'Offline-first approach',
+      'Intuitive task management'
     ]
   }
 ];

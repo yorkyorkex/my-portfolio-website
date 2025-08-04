@@ -19,6 +19,9 @@ const Navigation = () => {
   ], [])
 
   useEffect(() => {
+    // Check if we're in the browser
+    if (typeof window === 'undefined') return;
+    
     const theme = localStorage.getItem('theme')
     
     // Default to dark mode unless explicitly set to light
