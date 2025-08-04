@@ -14,7 +14,10 @@
       "Bash(timeout:*)",
       "Bash(cmd /c:*)",
       "Bash(exit)",
-      "WebFetch(domain:jasoneml.vercel.app)"
+      "WebFetch(domain:jasoneml.vercel.app)",
+      "Bash(npm run type-check:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run build:*)"
     ],
     "deny": []
   }

@@ -273,6 +273,94 @@ export const volunteerWork: VolunteerWork[] = [
 // Real projects showcase
 export const projects: Project[] = [
   {
+    id: 'ai-media-translation',
+    title: 'AI-Powered Media Translation & Dubbing Platform',
+    description: 'An AI-driven platform enabling media translation, multilingual dubbing, and customized video playbook for global audiences.',
+    longDescription: 'A comprehensive AI-powered platform that revolutionizes media localization through automated translation, natural-sounding multilingual dubbing, and customizable video playback experiences. Built for Braiv Tech to serve global media companies seeking efficient, high-quality localization solutions.',
+    technologies: ['Next.js', 'TypeScript', 'Firebase', 'Google Cloud', 'RESTful API', 'CI/CD', 'Mux API', 'ElevenLabs AI Dubbing', 'Video Player Customization', 'UI/UX Design'],
+    features: [
+      'Responsive multilingual UI with real-time sync via Firebase/Google Cloud',
+      'Custom video player themes using Mux API with branded playback',
+      'Advanced caption and highlight color customization',
+      'Translation API integration supporting multiple languages',
+      'Document formatting preservation during translation',
+      'AI-powered dubbing via ElevenLabs for natural-sounding voiceovers',
+      'Optimized deployment pipelines for faster releases',
+      'Performance-optimized API for smooth playback experience'
+    ],
+    githubUrl: undefined,
+    liveUrl: 'https://www.braiv.co/',
+    liveLabel: 'Product Website',
+    imageUrl: '/1.png',
+    category: 'fullstack',
+    status: 'completed',
+    highlights: [
+      'Built responsive multilingual UI with real-time sync',
+      'Developed custom video player themes with branded playback',
+      'Integrated AI-powered dubbing for natural multilingual voiceovers',
+      'Optimized deployment and API performance for production'
+    ]
+  },
+  {
+    id: 'wizard-budget',
+    title: 'Wizard Budget – Cross-Platform Personal Finance Management Mobile App',
+    description: 'A cross-platform mobile application for tracking income and expenses, budgeting, and visualizing personal finance trends with secure MySQL-powered data management.',
+    longDescription: 'A comprehensive personal finance management app designed for cross-platform mobile use. Features secure user authentication, persistent data storage, and interactive financial dashboards. Built with React Native and Expo for optimal mobile performance and user experience.',
+    technologies: ['React Native', 'Expo', 'Node.js', 'Express.js', 'MySQL', 'RESTful API', 'SQL', 'Authentication', 'Data Visualization', 'Mobile UI Design'],
+    features: [
+      'Cross-platform mobile budget tracking for income and expenses',
+      'Secure user authentication and session management',
+      'Persistent data storage using MySQL database',
+      'RESTful API integration for seamless data synchronization',
+      'Interactive dashboards with visualized financial insights',
+      'Transaction categorization and analysis tools',
+      'Mobile-optimized UI/UX design for enhanced usability',
+      'Real-time financial data updates and notifications'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/budget',
+    liveUrl: undefined,
+    imageUrl: '/2.png',
+    category: 'mobile',
+    status: 'completed',
+    highlights: [
+      'Designed cross-platform mobile budget tracking app',
+      'Implemented secure authentication with MySQL backend',
+      'Built interactive dashboards for financial insights',
+      'Applied mobile UI/UX principles for better engagement'
+    ]
+  },
+  {
+    id: 'interactive-3d-building',
+    title: 'Interactive 3D Building Visualization & AR/VR Simulation Platform',
+    description: 'An immersive 3D building visualization system with BIM/IFC integration and AR/VR simulation using Tilt Five.',
+    longDescription: 'A cutting-edge 3D visualization platform that transforms architectural data into immersive interactive experiences. Features comprehensive BIM/IFC integration for accurate building representation and revolutionary AR/VR simulation capabilities using Tilt Five hardware for unprecedented architectural visualization.',
+    technologies: ['Unity 3D', 'C#', '.NET Framework', 'BIM/IFC Integration', 'AR/VR Simulation', 'Tilt Five', 'Prefab System', 'Git', '3D Modeling', 'UI Interaction Design'],
+    features: [
+      '3D interactive building visualization system in Unity',
+      'Detailed exploration of architectural structures',
+      'BIM/IFC model data integration for accurate representation',
+      'AR/VR simulation using Tilt Five hardware',
+      'Immersive building walkthrough experiences',
+      'C# scripts for object interactions and camera movement',
+      'Building component highlighting and selection',
+      '.NET framework integration for complex data processing',
+      'Performance-optimized 3D rendering and interactivity'
+    ],
+    githubUrl: 'https://unity.com/',
+    liveUrl: 'https://www.tiltfive.com/',
+    githubLabel: 'Development Engine',
+    liveLabel: 'AR Device',
+    imageUrl: '/3.png',
+    category: 'ar-vr',
+    status: 'completed',
+    highlights: [
+      'Developed 3D interactive building visualization in Unity',
+      'Integrated BIM/IFC model data for accurate architecture',
+      'Implemented AR/VR simulation with Tilt Five hardware',
+      'Created C# scripts for enhanced object interactions'
+    ]
+  },
+  {
     id: 'entertainer-website',
     title: 'Personal Website of an Entertainer',
     description: 'Professional website for a Korean entertainer showcasing music, acting career, and fan engagement',
@@ -290,7 +378,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/yorkyorkex/my-app',
     liveUrl: 'https://my-app-bay-six-92.vercel.app/',
-    imageUrl: '/images/entertainer-website.svg',
+    imageUrl: '/4.png',
     category: 'web',
     status: 'completed',
     highlights: [
@@ -305,7 +393,7 @@ export const projects: Project[] = [
     title: 'Team Project Management System',
     description: 'Comprehensive project management application for team collaboration',
     longDescription: 'A full-stack project management system designed for teams to collaborate effectively. Features real-time updates, task management, team communication, and project tracking with modern UI/UX design.',
-    technologies: ['React', 'Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS', 'Real-time Database'],
+    technologies: ['React', 'Next.js', 'TypeScript', 'Firebase', 'MySQL', 'Tailwind CSS', 'Real-time Database'],
     features: [
       'Real-time project collaboration',
       'Task creation and assignment',
@@ -318,7 +406,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/yorkyorkex/project-managment-app',
     liveUrl: 'https://project-managment-app-theta.vercel.app/',
-    imageUrl: '/images/project-management.svg',
+    imageUrl: '/5.png',
     category: 'fullstack',
     status: 'completed',
     highlights: [
@@ -346,7 +434,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/yorkyorkex/todo-mobile-app',
     liveUrl: 'https://todo-mobile-app.vercel.app/',
-    imageUrl: '/images/task-management.svg',
+    imageUrl: '/6.png',
     category: 'mobile',
     status: 'completed',
     highlights: [
@@ -373,7 +461,7 @@ export const projects: Project[] = [
     ],
     githubUrl: 'https://github.com/yorkyorkex/my-portfolio-website',
     liveUrl: 'https://my-portfolio-website-livid-two.vercel.app/',
-    imageUrl: '/images/portfolio-website.svg',
+    imageUrl: '/7.png',
     category: 'web',
     status: 'completed',
     highlights: [

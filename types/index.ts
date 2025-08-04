@@ -33,6 +33,8 @@ export interface Project {
   category: 'web' | 'mobile' | 'ar-vr' | 'backend' | 'fullstack';
   status: 'completed' | 'in-progress' | 'planned';
   highlights?: string[];
+  githubLabel?: string;
+  liveLabel?: string;
 }
 
 export interface Skill {

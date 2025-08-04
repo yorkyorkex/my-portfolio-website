@@ -161,7 +161,7 @@ const Projects = () => {
                       leftIcon={<Github className="w-4 h-4" />}
                       onClick={() => window.open(project.githubUrl, '_blank')}
                     >
-                      Code
+                      {project.githubLabel || 'Code'}
                     </Button>
                   )}
                   {project.liveUrl && (
@@ -172,7 +172,7 @@ const Projects = () => {
                       leftIcon={<ExternalLink className="w-4 h-4" />}
                       onClick={() => window.open(project.liveUrl, '_blank')}
                     >
-                      Live Demo
+                      {project.liveLabel || 'Live Demo'}
                     </Button>
                   )}
                   {!project.githubUrl && !project.liveUrl && (
