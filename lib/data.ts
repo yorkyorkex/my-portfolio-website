@@ -1,4 +1,4 @@
-import { Experience, Education, Project, Skill, Award, VolunteerWork, ContactInfo, Reference } from '@/types';
+import { Experience, Education, Project, Skill, Award, Certification, VolunteerWork, ContactInfo, Reference } from '@/types';
 
 export const contactInfo: ContactInfo = {
   email: 'yorkyuex@gmail.com',
@@ -231,6 +231,45 @@ export const awards: Award[] = [
     date: 'May 2020',
     location: 'Taipei',
     description: 'Recognized for innovation and technical expertise in the Information Systems Group.'
+  }
+];
+
+export const certifications: Certification[] = [
+  {
+    id: '1',
+    title: 'Deloitte Australia - Cyber Security Virtual Internship',
+    organization: 'Deloitte',
+    date: 'July 2025',
+    credentialId: 'xoCwz9QQqEjBogJRF',
+    imageUrl: '/Cyber security.png',
+    description: 'Completed virtual internship program focusing on cybersecurity fundamentals, threat assessment, and security implementation strategies.'
+  },
+  {
+    id: '2',
+    title: 'Deloitte Australia - Data Analytics Virtual Internship',
+    organization: 'Deloitte',
+    date: 'July 2025',
+    credentialId: 'GEIEHAdveFGVQyHBb',
+    imageUrl: '/Data Analyst.png',
+    description: 'Completed comprehensive data analytics program covering data visualization, statistical analysis, and business intelligence tools.'
+  },
+  {
+    id: '3',
+    title: 'Deloitte Australia - Technology Job Simulation',
+    organization: 'Deloitte',
+    date: 'July 2025',
+    credentialId: 'njg83iGnBToSNz5t3',
+    imageUrl: '/Coding Dvelopment.png',
+    description: 'Participated in technology job simulation covering software development, system design, and technology consulting practices.'
+  },
+  {
+    id: '4',
+    title: 'Tata - GenAI Powered Data Analytics Virtual Internship',
+    organization: 'Tata Group',
+    date: 'July 2025',
+    credentialId: 'DZe4jcSEd68tng2Yz',
+    imageUrl: '/GenAI Powered Data Analytics.png',
+    description: 'Completed advanced program in AI-powered data analytics, focusing on machine learning applications and generative AI in business intelligence.'
   }
 ];
 

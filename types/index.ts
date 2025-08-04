@@ -53,6 +53,16 @@ export interface Award {
   description: string;
 }
 
+export interface Certification {
+  id: string;
+  title: string;
+  organization: string;
+  date: string;
+  credentialId?: string;
+  imageUrl?: string;
+  description: string;
+}
+
 export interface VolunteerWork {
   id: string;
   organization: string;

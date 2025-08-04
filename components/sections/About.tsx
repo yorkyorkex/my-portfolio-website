@@ -1,13 +1,13 @@
 'use client'
 
 import { useState } from 'react'
-import { GraduationCap, Award, Code2, Globe, Users, Zap } from 'lucide-react'
+import { GraduationCap, Award, Code2, Globe, Users, Zap, FileCheck } from 'lucide-react'
 import Card from '@/components/ui/Card'
-import { skills, education, awards } from '@/lib/data'
+import { skills, education, awards, certifications } from '@/lib/data'
 import { getSkillColor } from '@/lib/utils'
 
 const About = () => {
-  const [activeTab, setActiveTab] = useState<'overview' | 'skills' | 'education' | 'awards'>('overview')
+  const [activeTab, setActiveTab] = useState<'overview' | 'skills' | 'education' | 'awards' | 'certifications'>('overview')
 
   const stats = [
     { icon: <Code2 className="w-6 h-6" />, label: 'Years of Experience', value: '4+' },
@@ -20,7 +20,8 @@ const About = () => {
     { id: 'overview', label: 'Overview', icon: <Users className="w-4 h-4" /> },
     { id: 'skills', label: 'Skills', icon: <Code2 className="w-4 h-4" /> },
     { id: 'education', label: 'Education', icon: <GraduationCap className="w-4 h-4" /> },
-    { id: 'awards', label: 'Awards', icon: <Award className="w-4 h-4" /> }
+    { id: 'awards', label: 'Awards', icon: <Award className="w-4 h-4" /> },
+    { id: 'certifications', label: 'Certifications', icon: <FileCheck className="w-4 h-4" /> }
   ]
 
   const skillCategories = [
@@ -259,6 +260,50 @@ const About = () => {
                       <p className="text-gray-600 dark:text-gray-300">
                         {award.description}
                       </p>
+                    </div>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          )}
+
+          {activeTab === 'certifications' && (
+            <div className="space-y-6">
+              {certifications.map((cert) => (
+                <Card key={cert.id} className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <FileCheck className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                        <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                          {cert.title}
+                        </h3>
+                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                          {cert.date}
+                        </span>
+                      </div>
+                      <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">
+                        {cert.organization}
+                      </p>
+                      {cert.credentialId && (
+                        <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                          Credential ID: {cert.credentialId}
+                        </p>
+                      )}
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">
+                        {cert.description}
+                      </p>
+                      {cert.imageUrl && (
+                        <div className="mt-4">
+                          <img 
+                            src={cert.imageUrl} 
+                            alt={`${cert.title} Certificate`}
+                            className="max-w-xs rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                          />
+                        </div>
+                      )}
                     </div>
                   </div>
                 </Card>
