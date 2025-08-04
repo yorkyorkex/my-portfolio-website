@@ -110,36 +110,93 @@ export const education: Education[] = [
 ];
 
 export const skills: Skill[] = [
-  // Frontend
-  { name: 'React', category: 'frontend', level: 5 },
-  { name: 'Next.js', category: 'frontend', level: 5 },
-  { name: 'TypeScript', category: 'frontend', level: 4 },
-  { name: 'JavaScript', category: 'frontend', level: 5 },
-  { name: 'HTML/CSS', category: 'frontend', level: 5 },
-  { name: 'Tailwind CSS', category: 'frontend', level: 4 },
-  { name: 'Bootstrap', category: 'frontend', level: 4 },
-  
-  // Backend
-  { name: 'Firebase', category: 'backend', level: 4 },
-  { name: 'C#', category: 'backend', level: 4 },
-  { name: 'C++', category: 'backend', level: 3 },
-  { name: 'SQL', category: 'backend', level: 4 },
-  { name: 'REST APIs', category: 'backend', level: 4 },
-  
-  // Cloud & DevOps
-  { name: 'Google Cloud Platform', category: 'cloud', level: 4 },
-  { name: 'CI/CD', category: 'cloud', level: 4 },
-  { name: 'Git', category: 'cloud', level: 4 },
-  
-  // Tools
-  { name: 'Unity', category: 'tools', level: 4 },
-  { name: 'GitHub', category: 'tools', level: 4 },
-  
+  // Programming Languages
+  { name: 'Java', category: 'backend', level: 4, icon: '☕' },
+  { name: 'JavaScript', category: 'frontend', level: 5, icon: '🟨' },
+  { name: 'TypeScript', category: 'frontend', level: 5, icon: '🔷' },
+  { name: 'Python', category: 'backend', level: 4, icon: '🐍' },
+  { name: 'C++', category: 'backend', level: 4, icon: '⚙️' },
+  { name: 'C#', category: 'backend', level: 4, icon: '🔵' },
+  { name: 'HTML', category: 'frontend', level: 5, icon: '🌐' },
+  { name: 'CSS', category: 'frontend', level: 5, icon: '🎨' },
+  { name: 'SQL', category: 'backend', level: 4, icon: '🗄️' },
+
+  // Frameworks, Libraries & Architecture
+  { name: 'React', category: 'frontend', level: 5, icon: '⚛️' },
+  { name: 'React Native', category: 'frontend', level: 4, icon: '📱' },
+  { name: 'Next.js', category: 'frontend', level: 5, icon: '🔺' },
+  { name: 'Node.js', category: 'backend', level: 4, icon: '🟢' },
+  { name: 'Express.js', category: 'backend', level: 4, icon: '🚀' },
+  { name: 'Auth.js', category: 'backend', level: 4, icon: '🔐' },
+  { name: '.NET', category: 'backend', level: 4, icon: '🔷' },
+  { name: 'MVC', category: 'backend', level: 4, icon: '🏗️' },
+  { name: 'Bootstrap', category: 'frontend', level: 4, icon: '📐' },
+  { name: 'Tailwind CSS', category: 'frontend', level: 5, icon: '💨' },
+  { name: 'Unity', category: 'tools', level: 4, icon: '🎮' },
+
+  // Databases & ORMs
+  { name: 'PostgreSQL', category: 'backend', level: 4, icon: '🐘' },
+  { name: 'MySQL', category: 'backend', level: 4, icon: '🗃️' },
+  { name: 'Firebase', category: 'backend', level: 4, icon: '🔥' },
+  { name: 'Convex', category: 'backend', level: 3, icon: '📊' },
+  { name: 'Prisma ORM', category: 'backend', level: 4, icon: '🔺' },
+
+  // Cloud & Backend Services
+  { name: 'AWS S3', category: 'cloud', level: 4, icon: '☁️' },
+  { name: 'Vercel', category: 'cloud', level: 5, icon: '▲' },
+  { name: 'Google Cloud Platform', category: 'cloud', level: 4, icon: '🌤️' },
+  { name: 'IAM', category: 'cloud', level: 3, icon: '🔑' },
+
+  // APIs & Integration
+  { name: 'REST APIs', category: 'backend', level: 5, icon: '🔗' },
+  { name: 'CRUD Operations', category: 'backend', level: 5, icon: '🔄' },
+  { name: 'Mux Video API', category: 'backend', level: 3, icon: '🎥' },
+  { name: 'Spotify API', category: 'backend', level: 3, icon: '🎵' },
+  { name: 'YouTube Data API', category: 'backend', level: 3, icon: '📺' },
+
+  // Testing
+  { name: 'Unit Testing', category: 'backend', level: 4, icon: '🧪' },
+  { name: 'Functional Testing', category: 'backend', level: 4, icon: '⚗️' },
+
+  // Data Analytics & Visualization
+  { name: 'Tableau', category: 'tools', level: 4, icon: '📈' },
+  { name: 'Power BI', category: 'tools', level: 4, icon: '📊' },
+
+  // UI/UX & Prototyping Tools
+  { name: 'Figma', category: 'tools', level: 4, icon: '🎨' },
+  { name: 'Balsamiq', category: 'tools', level: 3, icon: '✏️' },
+
+  // Productivity & Business Tools
+  { name: 'Microsoft Excel', category: 'tools', level: 5, icon: '📗' },
+  { name: 'Microsoft Word', category: 'tools', level: 5, icon: '📄' },
+  { name: 'Microsoft 365 Dynamics', category: 'tools', level: 4, icon: '🏢' },
+  { name: 'Notion', category: 'tools', level: 4, icon: '📝' },
+  { name: 'Jira', category: 'tools', level: 4, icon: '📋' },
+  { name: 'Scrum', category: 'soft', level: 4, icon: '🏃‍♂️' },
+
+  // DevOps & CI/CD Tools
+  { name: 'CLI', category: 'cloud', level: 4, icon: '💻' },
+  { name: 'GitHub Actions', category: 'cloud', level: 4, icon: '⚡' },
+  { name: 'CI/CD', category: 'cloud', level: 4, icon: '🔄' },
+
+  // Developer Tools & AI
+  { name: 'Git', category: 'tools', level: 5, icon: '📋' },
+  { name: 'GitHub', category: 'tools', level: 5, icon: '🐙' },
+  { name: 'Docker', category: 'cloud', level: 3, icon: '🐳' },
+  { name: 'VS Code', category: 'tools', level: 5, icon: '💻' },
+  { name: 'Cursor', category: 'tools', level: 4, icon: '🎯' },
+  { name: 'PyCharm', category: 'tools', level: 4, icon: '🐍' },
+  { name: 'Visual Studio', category: 'tools', level: 4, icon: '🔵' },
+  { name: 'Copilot', category: 'tools', level: 4, icon: '👨‍💻' },
+  { name: 'ChatGPT', category: 'tools', level: 5, icon: '🤖' },
+  { name: 'OpenAI', category: 'tools', level: 4, icon: '🔮' },
+  { name: 'Claude', category: 'tools', level: 5, icon: '🧠' },
+
   // Soft Skills
-  { name: 'Team Collaboration', category: 'soft', level: 5 },
-  { name: 'Communication', category: 'soft', level: 5 },
-  { name: 'Problem Solving', category: 'soft', level: 5 },
-  { name: 'Public Speaking', category: 'soft', level: 4 }
+  { name: 'Team Collaboration', category: 'soft', level: 5, icon: '👥' },
+  { name: 'Communication', category: 'soft', level: 5, icon: '💬' },
+  { name: 'Problem Solving', category: 'soft', level: 5, icon: '🧩' },
+  { name: 'Public Speaking', category: 'soft', level: 4, icon: '🎤' }
 ];
 
 export const awards: Award[] = [

@@ -13,7 +13,7 @@ const About = () => {
     { icon: <Code2 className="w-6 h-6" />, label: 'Years of Experience', value: '4+' },
     { icon: <Globe className="w-6 h-6" />, label: 'Projects Completed', value: '15+' },
     { icon: <Users className="w-6 h-6" />, label: 'Happy Clients', value: '10+' },
-    { icon: <Zap className="w-6 h-6" />, label: 'Technologies', value: '20+' }
+    { icon: <Zap className="w-6 h-6" />, label: 'Technologies', value: '60+' }
   ]
 
   const tabs = [
@@ -151,29 +151,27 @@ const About = () => {
             <div className="space-y-8">
               {skillCategories.map((category) => (
                 <Card key={category.key} className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">
+                  <h3 className="text-xl font-bold mb-6 text-gray-900 dark:text-white">
                     {category.label}
                   </h3>
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
                     {category.skills.map((skill) => (
-                      <div
+                      <Card
                         key={skill.name}
-                        className={`px-3 py-2 rounded-lg text-sm font-medium ${getSkillColor(skill.category)}`}
+                        variant="glass"
+                        hover
+                        className="p-4 flex flex-col items-center justify-center text-center min-h-[120px] group cursor-pointer"
                       >
-                        <div className="flex items-center justify-between">
-                          <span>{skill.name}</span>
-                          <div className="flex gap-1">
-                            {[...Array(5)].map((_, i) => (
-                              <div
-                                key={i}
-                                className={`w-1.5 h-1.5 rounded-full ${
-                                  i < skill.level ? 'bg-current' : 'bg-current opacity-30'
-                                }`}
-                              />
-                            ))}
-                          </div>
+                        <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-200">
+                          {skill.icon}
                         </div>
-                      </div>
+                        <div className="text-sm font-medium text-gray-900 dark:text-white mb-1">
+                          {skill.name}
+                        </div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400">
+                          Level {skill.level}/5
+                        </div>
+                      </Card>
                     ))}
                   </div>
                 </Card>

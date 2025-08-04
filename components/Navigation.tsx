@@ -7,7 +7,7 @@ import Button from './ui/Button'
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(true)
   const [activeSection, setActiveSection] = useState('home')
 
   const navItems = useMemo(() => [
@@ -20,11 +20,18 @@ const Navigation = () => {
 
   useEffect(() => {
     const theme = localStorage.getItem('theme')
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
     
-    if (theme === 'dark' || (!theme && systemPrefersDark)) {
+    // Default to dark mode unless explicitly set to light
+    if (theme === 'light') {
+      setIsDark(false)
+      document.documentElement.classList.remove('dark')
+    } else {
+      // Default to dark mode (theme === 'dark' or no theme set)
       setIsDark(true)
       document.documentElement.classList.add('dark')
+      if (!theme) {
+        localStorage.setItem('theme', 'dark')
+      }
     }
   }, [])
 
