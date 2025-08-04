@@ -6,12 +6,84 @@ import Image from 'next/image'
 import Button from '@/components/ui/Button'
 import { contactInfo } from '@/lib/data'
 
+const titles = [
+  'Full-Stack Developer',
+  'IT Professional', 
+  'Cloud Systems Expert',
+  'Problem Solver'
+]
+
 const Hero = () => {
   const [mounted, setMounted] = useState(false)
+  const [currentTitleIndex, setCurrentTitleIndex] = useState(0)
+  const [currentTitle, setCurrentTitle] = useState('')
+  const [isTyping, setIsTyping] = useState(false)
+  const [nameAnimated, setNameAnimated] = useState(false)
+  const [wordsAnimated, setWordsAnimated] = useState(false)
 
   useEffect(() => {
     setMounted(true)
+    // Start name animation immediately after mount
+    setTimeout(() => setNameAnimated(true), 100)
+    // Start description animation
+    setTimeout(() => setWordsAnimated(true), 800)
   }, [])
+
+  // Character-by-character typing animation for job titles
+  useEffect(() => {
+    if (!mounted) return
+
+    let timeouts: NodeJS.Timeout[] = []
+
+    const typeTitle = () => {
+      const title = titles[currentTitleIndex]
+      setCurrentTitle('')
+      setIsTyping(true)
+      
+      // Clear any existing timeouts
+      timeouts.forEach(clearTimeout)
+      timeouts = []
+      
+      // Type each character
+      for (let i = 0; i <= title.length; i++) {
+        const timeout = setTimeout(() => {
+          setCurrentTitle(title.substring(0, i))
+          if (i === title.length) {
+            setIsTyping(false)
+            // Wait before deleting
+            const deleteTimeout = setTimeout(() => {
+              // Delete each character
+              for (let j = title.length; j >= 0; j--) {
+                const delTimeout = setTimeout(() => {
+                  setCurrentTitle(title.substring(0, j))
+                  if (j === 0) {
+                    // Move to next title
+                    const switchTimeout = setTimeout(() => {
+                      setCurrentTitleIndex((prev) => (prev + 1) % titles.length)
+                    }, 300)
+                    timeouts.push(switchTimeout)
+                  }
+                }, (title.length - j) * 50)
+                timeouts.push(delTimeout)
+              }
+            }, 2500)
+            timeouts.push(deleteTimeout)
+          }
+        }, i * 100)
+        timeouts.push(timeout)
+      }
+    }
+
+    // Start typing animation after initial delay
+    const startTimeout = setTimeout(() => {
+      typeTitle()
+    }, 1200)
+    timeouts.push(startTimeout)
+
+    return () => {
+      timeouts.forEach(clearTimeout)
+    }
+  }, [currentTitleIndex, mounted])
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
@@ -36,38 +108,100 @@ const Hero = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Main Content */}
             <div className="text-center lg:text-left">
-              {/* Profile Image */}
-              <div className="mb-8 animate-fade-in flex justify-center lg:justify-start">
-                <div className="relative">
-                  <Image
-                    src="/Persona.png"
-                    alt="Hsiang-Jen Yu"
-                    width={180}
-                    height={180}
-                    className="w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full object-cover shadow-2xl animate-float border-4 border-white dark:border-gray-700"
-                    priority
-                  />
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500/20 to-purple-600/20"></div>
+              {/* Profile Image with Enhanced Glow */}
+              <div className="mb-12 lg:mb-16 animate-fade-in flex justify-center lg:justify-start">
+                <div className="relative group">
+                  {/* Outer glow rings */}
+                  <div className="absolute -inset-8 rounded-full bg-gradient-to-r from-primary-400/20 via-purple-500/30 to-blue-500/20 blur-3xl animate-avatar-glow opacity-60 group-hover:opacity-90 transition-opacity duration-1000"></div>
+                  <div className="absolute -inset-6 rounded-full bg-gradient-to-r from-primary-300/25 via-purple-400/35 to-blue-400/25 blur-2xl animate-avatar-glow-secondary opacity-50 group-hover:opacity-80 transition-opacity duration-1000"></div>
+                  <div className="absolute -inset-4 rounded-full bg-gradient-to-r from-primary-200/30 via-purple-300/40 to-blue-300/30 blur-xl animate-avatar-glow-tertiary opacity-40 group-hover:opacity-70 transition-opacity duration-1000"></div>
+                  
+                  {/* Main avatar container */}
+                  <div className="relative">
+                    <Image
+                      src="/Persona.png"
+                      alt="Hsiang-Jen Yu"
+                      width={180}
+                      height={180}
+                      className="w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full object-cover shadow-2xl animate-float border-4 border-white dark:border-gray-700 relative z-10 transition-transform duration-500 group-hover:scale-105"
+                      priority
+                    />
+                    
+                    {/* Animated gradient overlay */}
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500/20 to-purple-600/20 animate-pulse opacity-60"></div>
+                    
+                    {/* Rotating halo effect */}
+                    <div className="absolute -inset-2 rounded-full border-2 border-transparent bg-gradient-to-r from-primary-400 via-purple-500 to-blue-500 animate-spin-slow opacity-30 group-hover:opacity-60 transition-opacity duration-700" style={{ animationDuration: '8s' }}></div>
+                    <div className="absolute -inset-1 rounded-full border border-transparent bg-gradient-to-r from-blue-400 via-primary-500 to-purple-500 animate-spin-slow opacity-20 group-hover:opacity-50 transition-opacity duration-700" style={{ animationDuration: '12s', animationDirection: 'reverse' }}></div>
+                    
+                    {/* Pulsing light particles around avatar */}
+                    <div className="absolute top-0 left-1/2 w-2 h-2 bg-primary-400 rounded-full animate-orbit-slow opacity-70"></div>
+                    <div className="absolute top-1/4 right-0 w-1.5 h-1.5 bg-purple-400 rounded-full animate-orbit-medium opacity-60"></div>
+                    <div className="absolute bottom-0 left-1/2 w-2 h-2 bg-blue-400 rounded-full animate-orbit-slow opacity-50" style={{ animationDelay: '4s' }}></div>
+                    <div className="absolute top-3/4 left-0 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-orbit-medium opacity-65" style={{ animationDelay: '2s' }}></div>
+                  </div>
                 </div>
               </div>
 
               {/* Main Heading */}
               <div className="mb-6 animate-slide-up" style={{ animationDelay: '0.2s' }}>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
-                  <span className="gradient-text">Hsiang-Jen Yu</span>
+                  <span className={`gradient-text name-glow-subtle transition-all duration-1000 ${
+                    nameAnimated 
+                      ? 'opacity-100 transform translate-y-0' 
+                      : 'opacity-0 transform translate-y-8'
+                  }`}>
+                    Hsiang-Jen Yu
+                  </span>
                 </h1>
-                <h2 className="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 font-medium">
-                  Full-Stack Developer & IT Professional
+                <h2 className="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 font-medium min-h-[3rem] flex items-center justify-center lg:justify-start">
+                  <div className="relative">
+                    <span className="inline-block font-mono whitespace-nowrap">
+                      {currentTitle}
+                      <span className={`inline-block animate-blink ml-1 text-primary-500 ${
+                        isTyping || currentTitle.length > 0 ? 'opacity-100' : 'opacity-0'
+                      }`}>|</span>
+                    </span>
+                  </div>
                 </h2>
               </div>
 
               {/* Description */}
               <div className="mb-8 animate-slide-up" style={{ animationDelay: '0.4s' }}>
                 <p className="text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
-                  IT professional skilled in <span className="font-semibold text-primary-600 dark:text-primary-400">full-stack development</span>, 
-                  <span className="font-semibold text-primary-600 dark:text-primary-400"> cloud systems</span>, and 
-                  <span className="font-semibold text-primary-600 dark:text-primary-400"> technical support</span>. 
-                  Known for adaptability and a proactive mindset, with a strong focus on delivering practical solutions.
+                  {[
+                    'IT', 'professional', 'skilled', 'in', 
+                    { text: 'full-stack', isHighlight: true }, 
+                    { text: 'development', isHighlight: true }, ',',
+                    { text: 'cloud', isHighlight: true },
+                    { text: 'systems', isHighlight: true }, ',', 'and',
+                    { text: 'technical', isHighlight: true },
+                    { text: 'support', isHighlight: true }, '.', 'Known', 'for', 'adaptability', 'and', 'a', 'proactive', 'mindset,', 'with', 'a', 'strong', 'focus', 'on', 'delivering', 'practical', 'solutions.'
+                  ].map((word, index) => {
+                    const isWordObject = typeof word === 'object'
+                    const wordText = isWordObject ? word.text : word
+                    const isHighlight = isWordObject ? word.isHighlight : false
+                    
+                    return (
+                      <span
+                        key={index}
+                        className={`inline-block transition-all duration-500 mr-1 ${
+                          wordsAnimated
+                            ? 'opacity-100 transform translate-y-0'
+                            : 'opacity-0 transform translate-y-2'
+                        } ${
+                          isHighlight 
+                            ? 'font-semibold text-primary-600 dark:text-primary-400 animate-keyword-glow' 
+                            : ''
+                        }`}
+                        style={{
+                          transitionDelay: `${index * 0.05}s`
+                        }}
+                      >
+                        {wordText}
+                      </span>
+                    )
+                  })}
                 </p>
               </div>
 

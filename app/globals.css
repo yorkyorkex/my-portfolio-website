@@ -3,6 +3,45 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Name glow effect */
+.name-glow {
+  text-shadow: 
+    0 0 10px rgba(59, 130, 246, 0.4),
+    0 0 20px rgba(147, 51, 234, 0.3),
+    0 0 40px rgba(59, 130, 246, 0.2),
+    0 0 60px rgba(147, 51, 234, 0.1);
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5)) 
+          drop-shadow(0 0 16px rgba(147, 51, 234, 0.4));
+}
+
+/* Subtle name glow effect matching blue text style */
+.name-glow-subtle {
+  text-shadow: 
+    0 0 8px rgba(59, 130, 246, 0.6),
+    0 0 16px rgba(59, 130, 246, 0.4),
+    0 0 24px rgba(59, 130, 246, 0.2);
+  animation: keyword-glow 2s ease-in-out infinite;
+}
+
+/* Light mode name glow */
+html:not(.dark) .name-glow {
+  text-shadow: 
+    0 0 8px rgba(59, 130, 246, 0.3),
+    0 0 16px rgba(147, 51, 234, 0.2),
+    0 0 32px rgba(59, 130, 246, 0.1);
+  filter: drop-shadow(0 0 4px rgba(59, 130, 246, 0.4)) 
+          drop-shadow(0 0 8px rgba(147, 51, 234, 0.3));
+}
+
+/* Light mode subtle name glow */
+html:not(.dark) .name-glow-subtle {
+  text-shadow: 
+    0 0 6px rgba(59, 130, 246, 0.4),
+    0 0 12px rgba(59, 130, 246, 0.3),
+    0 0 18px rgba(59, 130, 246, 0.15);
+  animation: keyword-glow 2s ease-in-out infinite;
+}
+
 :root {
   /* Dark mode as default */
   --foreground-rgb: 255, 255, 255;
@@ -217,4 +256,245 @@ html {
 
 html:not(.dark) {
   background-color: #ffffff; /* Light background for light mode */
+}
+
+/* Avatar Enhancement Animations */
+@keyframes avatar-glow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1) rotate(0deg);
+  }
+  33% {
+    opacity: 0.8;
+    transform: scale(1.1) rotate(120deg);
+  }
+  66% {
+    opacity: 0.7;
+    transform: scale(1.05) rotate(240deg);
+  }
+}
+
+@keyframes avatar-glow-secondary {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.15) rotate(180deg);
+  }
+}
+
+@keyframes avatar-glow-tertiary {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1) rotate(360deg);
+  }
+  25% {
+    opacity: 0.7;
+    transform: scale(1.08) rotate(90deg);
+  }
+  75% {
+    opacity: 0.6;
+    transform: scale(1.12) rotate(270deg);
+  }
+}
+
+@keyframes orbit-slow {
+  0% {
+    transform: rotate(0deg) translateX(60px) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) translateX(60px) rotate(-360deg);
+    opacity: 0.7;
+  }
+}
+
+@keyframes orbit-medium {
+  0% {
+    transform: rotate(0deg) translateX(45px) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(180deg) translateX(45px) rotate(-180deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(45px) rotate(-360deg);
+    opacity: 0.6;
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-avatar-glow {
+  animation: avatar-glow 6s ease-in-out infinite;
+}
+
+.animate-avatar-glow-secondary {
+  animation: avatar-glow-secondary 8s ease-in-out infinite;
+}
+
+.animate-avatar-glow-tertiary {
+  animation: avatar-glow-tertiary 10s ease-in-out infinite;
+}
+
+.animate-orbit-slow {
+  animation: orbit-slow 8s linear infinite;
+}
+
+.animate-orbit-medium {
+  animation: orbit-medium 6s linear infinite;
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Enhanced Text Animation Effects */
+@keyframes slide-reveal {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    transform: translateX(-10px);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes character-stagger {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes color-wave {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes word-flow {
+  0% {
+    opacity: 0;
+    transform: translateY(15px) rotateX(90deg);
+  }
+  50% {
+    transform: translateY(-2px) rotateX(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+  }
+}
+
+@keyframes keyword-glow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 
+      0 0 10px rgba(59, 130, 246, 0.5),
+      0 0 20px rgba(59, 130, 246, 0.3),
+      0 0 30px rgba(59, 130, 246, 0.2);
+    transform: scale(1.02);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-slide-reveal {
+  animation: slide-reveal 0.8s ease-out;
+}
+
+.animate-character-stagger {
+  animation: character-stagger 0.6s ease-out;
+}
+
+.animate-color-wave {
+  background: linear-gradient(90deg, 
+    rgba(59, 130, 246, 0.8) 0%, 
+    rgba(147, 51, 234, 0.8) 25%, 
+    rgba(59, 130, 246, 0.8) 50%, 
+    rgba(147, 51, 234, 0.8) 75%, 
+    rgba(59, 130, 246, 0.8) 100%);
+  background-size: 200% 100%;
+  animation: color-wave 3s ease-in-out infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.animate-word-flow {
+  animation: word-flow 0.5s ease-out;
+}
+
+.animate-keyword-glow {
+  animation: keyword-glow 2s ease-in-out infinite;
+}
+
+.animate-gradient-shift {
+  background: linear-gradient(45deg, 
+    #3b82f6, #8b5cf6, #06b6d4, #10b981, #f59e0b, #ef4444);
+  background-size: 400% 400%;
+  animation: gradient-shift 4s ease-in-out infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Performance optimizations */
+.animate-character-stagger,
+.animate-word-flow,
+.animate-slide-reveal {
+  will-change: transform, opacity;
+}
+
+.animate-keyword-glow {
+  will-change: transform, text-shadow;
 }
