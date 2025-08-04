@@ -42,9 +42,9 @@ const Hero = () => {
                   <Image
                     src="/Persona.png"
                     alt="Hsiang-Jen Yu"
-                    width={128}
-                    height={128}
-                    className="w-32 h-32 rounded-full object-cover shadow-2xl animate-float border-4 border-white dark:border-gray-700"
+                    width={180}
+                    height={180}
+                    className="w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full object-cover shadow-2xl animate-float border-4 border-white dark:border-gray-700"
                     priority
                   />
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500/20 to-purple-600/20"></div>
@@ -157,17 +157,51 @@ const Hero = () => {
             </div>
 
             {/* Right Column - IT Picture */}
-            <div className="hidden lg:block animate-slide-up" style={{ animationDelay: '0.4s' }}>
-              <div className="relative">
-                <Image
-                  src="/IT picture.png"
-                  alt="IT Professional Workspace"
-                  width={500}
-                  height={600}
-                  className="w-full h-auto rounded-2xl shadow-2xl object-cover"
-                  priority
-                />
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary-500/10 to-purple-600/10"></div>
+            <div className="hidden lg:block animate-slide-up animate-float-gentle" style={{ animationDelay: '0.4s' }}>
+              <div className="relative group">
+                {/* Glowing aura layers */}
+                <div className="absolute -inset-6 rounded-3xl bg-gradient-to-r from-primary-400/20 via-purple-500/20 to-blue-500/20 blur-2xl animate-glow-pulse opacity-60 group-hover:opacity-90 transition-opacity duration-1000"></div>
+                <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-primary-300/25 via-purple-400/25 to-blue-400/25 blur-xl animate-pulse opacity-50 group-hover:opacity-80 transition-opacity duration-1000" style={{ animationDelay: '0.5s' }}></div>
+                <div className="absolute -inset-2 rounded-3xl bg-gradient-to-r from-primary-200/30 via-purple-300/30 to-blue-300/30 blur-lg animate-glow-pulse opacity-40 group-hover:opacity-70 transition-opacity duration-1000" style={{ animationDelay: '1s' }}></div>
+                
+                {/* Main image container */}
+                <div className="relative overflow-hidden rounded-2xl shadow-2xl transform transition-all duration-700 group-hover:scale-105 group-hover:rotate-1">
+                  <Image
+                    src="/IT picture.png"
+                    alt="IT Professional Workspace"
+                    width={500}
+                    height={600}
+                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
+                    priority
+                  />
+                  
+                  {/* Animated gradient overlays */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/10 via-transparent to-purple-600/10 transition-opacity duration-700 group-hover:opacity-25"></div>
+                  <div className="absolute inset-0 bg-gradient-to-bl from-blue-500/8 via-transparent to-cyan-500/8 animate-pulse opacity-40"></div>
+                  
+                  {/* Shimmer effect */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 animate-shimmer"></div>
+                  
+                  {/* Enhanced floating light particles effect */}
+                  <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary-400 rounded-full animate-particle-float opacity-70" style={{ animationDelay: '0s' }}></div>
+                  <div className="absolute top-3/4 right-1/3 w-1.5 h-1.5 bg-purple-400 rounded-full animate-particle-float opacity-60" style={{ animationDelay: '1s' }}></div>
+                  <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-blue-400 rounded-full animate-particle-float opacity-50" style={{ animationDelay: '2s' }}></div>
+                  <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-particle-float opacity-65" style={{ animationDelay: '0.5s' }}></div>
+                  <div className="absolute top-1/3 left-2/3 w-1 h-1 bg-emerald-400 rounded-full animate-particle-float opacity-55" style={{ animationDelay: '1.5s' }}></div>
+                  <div className="absolute bottom-1/3 right-1/5 w-1.5 h-1.5 bg-pink-400 rounded-full animate-particle-float opacity-50" style={{ animationDelay: '2.5s' }}></div>
+                  
+                  {/* Enhanced border glow */}
+                  <div className="absolute inset-0 rounded-2xl border border-gradient-to-r from-primary-400/40 via-purple-400/40 to-blue-400/40 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                  
+                  {/* Pulsing corner lights */}
+                  <div className="absolute top-2 left-2 w-3 h-3 bg-primary-400/60 rounded-full animate-ping opacity-0 group-hover:opacity-100" style={{ animationDelay: '0s' }}></div>
+                  <div className="absolute top-2 right-2 w-2 h-2 bg-purple-400/60 rounded-full animate-ping opacity-0 group-hover:opacity-100" style={{ animationDelay: '0.3s' }}></div>
+                  <div className="absolute bottom-2 left-2 w-2 h-2 bg-blue-400/60 rounded-full animate-ping opacity-0 group-hover:opacity-100" style={{ animationDelay: '0.6s' }}></div>
+                  <div className="absolute bottom-2 right-2 w-3 h-3 bg-cyan-400/60 rounded-full animate-ping opacity-0 group-hover:opacity-100" style={{ animationDelay: '0.9s' }}></div>
+                </div>
+                
+                {/* Enhanced breathing animation */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-white/3 to-transparent animate-pulse opacity-30" style={{ animationDuration: '5s' }}></div>
               </div>
             </div>
           </div>
