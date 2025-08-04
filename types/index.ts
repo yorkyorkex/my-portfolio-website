@@ -51,6 +51,7 @@ export interface Award {
   date: string;
   location: string;
   description: string;
+  imageUrl?: string;
 }
 
 export interface Certification {

@@ -206,7 +206,8 @@ export const awards: Award[] = [
     organization: 'Queensland University of Technology',
     date: 'July 2025',
     location: 'Brisbane',
-    description: 'Recognized for high academic performance in the Computer Science program.'
+    description: 'Recognized for high academic performance in the Computer Science program.',
+    imageUrl: '/2025 QUT Executive Deans Commendation for Academic Excellence.png'
   },
   {
     id: '2',
@@ -214,7 +215,8 @@ export const awards: Award[] = [
     organization: 'Queensland University of Technology',
     date: 'October 2024',
     location: 'Brisbane',
-    description: 'Awarded for research on university IT programs and industry needs at the 5th Annual Research in IT Practice Conference.'
+    description: 'Awarded for research on university IT programs and industry needs at the 5th Annual Research in IT Practice Conference.',
+    imageUrl: '/2024 QUT Best Research Papers and Outputs Awards.png'
   },
   {
     id: '3',
@@ -222,7 +224,8 @@ export const awards: Award[] = [
     organization: 'Queensland University of Technology',
     date: 'December 2023',
     location: 'Brisbane',
-    description: 'Recognized for consistently high academic performance in the Master of IT program.'
+    description: 'Recognized for consistently high academic performance in the Master of IT program.',
+    imageUrl: '/2023 QUT Executive Deans Commendation for Academic Excellence.png'
   },
   {
     id: '4',

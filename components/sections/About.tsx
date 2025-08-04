@@ -257,9 +257,18 @@ const About = () => {
                       <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">
                         {award.organization} • {award.location}
                       </p>
-                      <p className="text-gray-600 dark:text-gray-300">
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">
                         {award.description}
                       </p>
+                      {award.imageUrl && (
+                        <div className="mt-4">
+                          <img 
+                            src={award.imageUrl} 
+                            alt={`${award.title} Award`}
+                            className="max-w-xs rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                          />
+                        </div>
+                      )}
                     </div>
                   </div>
                 </Card>
