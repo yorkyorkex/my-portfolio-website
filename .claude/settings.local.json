@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(claude mcp add filesystem npx:*)",
+      "Bash(claude mcp add:*)",
+      "Bash(claude mcp:*)",
+      "Bash(npm install:*)",
+      "Bash(npm search:*)",
+      "Bash(findstr:*)",
+      "Bash(powershell:*)",
+      "Bash(claude:*)",
+      "Bash(mkdir:*)",
+      "Bash(timeout:*)",
+      "Bash(cmd /c:*)",
+      "Bash(exit)",
+      "WebFetch(domain:jasoneml.vercel.app)"
+    ],
+    "deny": []
+  }
+}
