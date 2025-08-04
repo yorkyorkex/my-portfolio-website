@@ -5,7 +5,7 @@ export const contactInfo: ContactInfo = {
   phone: '+61 416 556 319',
   linkedin: 'https://linkedin.com/in/hsiang-jen-yu-184b22267',
   github: 'https://github.com/hsiangjeny', // Add your GitHub if available
-  location: 'Brisbane, Australia'
+  location: 'Australia, New Zealand'
 };
 
 export const experiences: Experience[] = [
