@@ -150,21 +150,31 @@ const Hero = () => {
                 animationFillMode: 'both'
               }}>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
-                  <div className={`${
-                    nameAnimated 
-                      ? 'opacity-100' 
-                      : 'opacity-0'
-                  }`}
-                  style={{
-                    transition: 'opacity 1000ms ease-in-out',
+                  <div style={{
+                    position: 'relative',
                     display: 'inline-block',
-                    position: 'relative'
+                    height: 'auto'
                   }}>
-                    <span className="gradient-text name-glow-subtle"
+                    {/* 隱藏的佔位元素來保持空間 */}
+                    <span style={{
+                      visibility: 'hidden',
+                      display: 'inline-block',
+                      paddingBottom: '8px'
+                    }} className="gradient-text text-4xl md:text-6xl lg:text-7xl font-bold">
+                      Hsiang-Jen Yu
+                    </span>
+                    
+                    {/* 實際顯示的動畫元素 */}
+                    <span className={`gradient-text name-glow-subtle ${
+                      nameAnimated 
+                        ? 'opacity-100' 
+                        : 'opacity-0'
+                    }`}
                     style={{
                       display: 'inline-block',
                       paddingBottom: '8px',
-                      position: 'relative'
+                      transition: 'opacity 1000ms ease-in-out',
+                      whiteSpace: 'nowrap'
                     }}>
                       Hsiang-Jen Yu
                     </span>
