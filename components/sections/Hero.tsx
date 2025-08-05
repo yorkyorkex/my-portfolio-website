@@ -146,18 +146,23 @@ const Hero = () => {
               {/* Main Heading */}
               <div className="mb-6 animate-slide-up" style={{ animationDelay: '0.2s' }}>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
-                  <span className={`gradient-text name-glow-subtle ${
+                  <div className={`${
                     nameAnimated 
                       ? 'opacity-100 translate-y-0' 
                       : 'opacity-0 translate-y-8'
                   }`}
                   style={{
                     transition: 'opacity 1000ms, transform 1000ms',
-                    display: 'inline-block',
-                    paddingBottom: '8px'
+                    display: 'inline-block'
                   }}>
-                    Hsiang-Jen Yu
-                  </span>
+                    <span className="gradient-text name-glow-subtle"
+                    style={{
+                      display: 'inline-block',
+                      paddingBottom: '8px'
+                    }}>
+                      Hsiang-Jen Yu
+                    </span>
+                  </div>
                 </h1>
                 <h2 className="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 font-medium min-h-[3rem] flex items-center justify-center lg:justify-start">
                   <div className="relative">

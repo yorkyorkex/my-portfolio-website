@@ -16,10 +16,10 @@ export const experiences: Experience[] = [
     location: 'Brisbane',
     duration: 'August 2024 - November 2024',
     description: [
-      'Improved web performance by building responsive apps with React, Next.js, TypeScript',
-      'Reduced deployment time through CI/CD pipeline automation',
-      'Enhanced scalability and uptime by managing Google Cloud & Firebase infrastructure',
-      'Boosted data processing speed via RESTful API integration'
+      'Built AI-powered media translation tools enabling multi-language video playback and AI dubbing',
+      'Built multilingual UIs with React, Next.js, TypeScript, and integrated translation APIs',
+      'Optimized real-time sync using Firebase, implemented unit and functional tests',
+      'Automated deployments via CI/CD on Google Cloud for faster, reliable releases'
     ],
     technologies: ['React', 'Next.js', 'TypeScript', 'Google Cloud', 'Firebase', 'CI/CD', 'REST APIs'],
     achievements: [
@@ -52,10 +52,10 @@ export const experiences: Experience[] = [
     location: 'Brisbane',
     duration: 'June 2024 - Present',
     description: [
-      'Ensured zero tech disruptions across multiple high-profile events by delivering timely AV/IT support',
-      'Resolved issues within minutes, directly improving client satisfaction and feedback scores',
-      'Set up and maintained IT/AV systems for large attendees per session',
-      'Coordinated with cross-functional teams to maintain seamless operations'
+      'Ensured system uptime across high-profile events by proactive IT/AV monitoring and support',
+      'Diagnosed and resolved hardware, software, and network issues, improving client satisfaction',
+      'Configured, deployed, and maintained enterprise-grade IT/AV systems',
+      'Collaborated with cross-functional teams to integrate technology solutions and seamless operations'
     ],
     technologies: ['AV Systems', 'IT Support', 'Event Technology'],
     achievements: [
@@ -67,13 +67,13 @@ export const experiences: Experience[] = [
   {
     id: '4',
     company: 'Tai Lee Industrial Co., Ltd.',
-    position: 'Administration Assistant',
+    position: 'Administration Officer',
     location: 'New Taipei City',
     duration: 'March 2020 - May 2022',
     description: [
-      'Cut data errors by streamlining inventory systems',
-      'Reduced processing time through improved internal workflows',
-      'Managed communications across departments and external partners'
+      'Optimized the inventory database to reduce data errors through system automation',
+      'Streamlined workflows by introducing digital process management tools.',
+      'Coordinated system integration and information flow across departments and external partners'
     ],
     technologies: ['Data Management', 'Process Optimization'],
     achievements: [
