@@ -169,9 +169,6 @@ const Contact = () => {
               {/* 實際顯示的動畫元素 */}
               <span className="gradient-text section-title-glow"
               style={{
-                display: 'inline-block',
-                paddingBottom: '8px',
-                whiteSpace: 'nowrap',
                 animationDelay: '1.5s'
               }}>
                 Get In Touch
