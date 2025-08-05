@@ -58,6 +58,32 @@ html:not(.dark) .name-glow-subtle {
   left: 0;
 }
 
+/* Section title glow effect - similar to name but more subtle */
+.section-title-glow {
+  text-shadow: 
+    0 0 4px rgba(59, 130, 246, 0.3),
+    0 0 8px rgba(59, 130, 246, 0.2),
+    0 0 12px rgba(59, 130, 246, 0.1);
+  animation: section-title-glow-scale 2.5s ease-in-out infinite;
+  transform-origin: top left;
+  will-change: transform, text-shadow;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  isolation: isolate;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Light mode section title glow */
+html:not(.dark) .section-title-glow {
+  text-shadow: 
+    0 0 3px rgba(59, 130, 246, 0.25),
+    0 0 6px rgba(59, 130, 246, 0.15),
+    0 0 9px rgba(59, 130, 246, 0.08);
+  animation: section-title-glow-scale-light 2.5s ease-in-out infinite;
+}
+
 :root {
   /* Dark mode as default */
   --foreground-rgb: 255, 255, 255;
@@ -509,6 +535,56 @@ html:not(.dark) {
       0 0 4px rgba(59, 130, 246, 0.3),
       0 0 8px rgba(59, 130, 246, 0.2),
       0 0 12px rgba(59, 130, 246, 0.1);
+    transform: scale3d(1.0, 1.0, 1.0) translate3d(0, 0, 0);
+  }
+}
+
+/* Section title glow keyframes - dark mode */
+@keyframes section-title-glow-scale {
+  0% {
+    text-shadow: 
+      0 0 4px rgba(59, 130, 246, 0.3),
+      0 0 8px rgba(59, 130, 246, 0.2),
+      0 0 12px rgba(59, 130, 246, 0.1);
+    transform: scale3d(1.0, 1.0, 1.0) translate3d(0, 0, 0);
+  }
+  50% {
+    text-shadow: 
+      0 0 6px rgba(59, 130, 246, 0.4),
+      0 0 12px rgba(59, 130, 246, 0.3),
+      0 0 18px rgba(59, 130, 246, 0.15);
+    transform: scale3d(1.015, 1.015, 1.0) translate3d(0, 0, 0);
+  }
+  100% {
+    text-shadow: 
+      0 0 4px rgba(59, 130, 246, 0.3),
+      0 0 8px rgba(59, 130, 246, 0.2),
+      0 0 12px rgba(59, 130, 246, 0.1);
+    transform: scale3d(1.0, 1.0, 1.0) translate3d(0, 0, 0);
+  }
+}
+
+/* Section title glow keyframes - light mode */
+@keyframes section-title-glow-scale-light {
+  0% {
+    text-shadow: 
+      0 0 3px rgba(59, 130, 246, 0.25),
+      0 0 6px rgba(59, 130, 246, 0.15),
+      0 0 9px rgba(59, 130, 246, 0.08);
+    transform: scale3d(1.0, 1.0, 1.0) translate3d(0, 0, 0);
+  }
+  50% {
+    text-shadow: 
+      0 0 4px rgba(59, 130, 246, 0.35),
+      0 0 8px rgba(59, 130, 246, 0.25),
+      0 0 12px rgba(59, 130, 246, 0.12);
+    transform: scale3d(1.015, 1.015, 1.0) translate3d(0, 0, 0);
+  }
+  100% {
+    text-shadow: 
+      0 0 3px rgba(59, 130, 246, 0.25),
+      0 0 6px rgba(59, 130, 246, 0.15),
+      0 0 9px rgba(59, 130, 246, 0.08);
     transform: scale3d(1.0, 1.0, 1.0) translate3d(0, 0, 0);
   }
 }

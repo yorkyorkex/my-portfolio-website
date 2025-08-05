@@ -40,7 +40,31 @@ const Projects = () => {
       <div className="container-width section-padding">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">Projects</span>
+            <div style={{
+              position: 'relative',
+              display: 'inline-block',
+              height: 'auto'
+            }}>
+              {/* 隱藏的佔位元素 */}
+              <span style={{
+                visibility: 'hidden',
+                display: 'inline-block',
+                paddingBottom: '8px'
+              }} className="gradient-text text-4xl md:text-5xl font-bold">
+                Projects
+              </span>
+              
+              {/* 實際顯示的動畫元素 */}
+              <span className="gradient-text section-title-glow"
+              style={{
+                display: 'inline-block',
+                paddingBottom: '8px',
+                whiteSpace: 'nowrap',
+                animationDelay: '1s'
+              }}>
+                Projects
+              </span>
+            </div>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Showcasing my work in full-stack development, AR/VR experiences, and innovative solutions

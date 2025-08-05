@@ -37,7 +37,31 @@ const About = () => {
       <div className="container-width section-padding">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">About Me</span>
+            <div style={{
+              position: 'relative',
+              display: 'inline-block',
+              height: 'auto'
+            }}>
+              {/* 隱藏的佔位元素 */}
+              <span style={{
+                visibility: 'hidden',
+                display: 'inline-block',
+                paddingBottom: '8px'
+              }} className="gradient-text text-4xl md:text-5xl font-bold">
+                About Me
+              </span>
+              
+              {/* 實際顯示的動畫元素 */}
+              <span className="gradient-text section-title-glow"
+              style={{
+                display: 'inline-block',
+                paddingBottom: '8px',
+                whiteSpace: 'nowrap',
+                animationDelay: '0s'
+              }}>
+                About Me
+              </span>
+            </div>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Passionate about creating innovative solutions and delivering exceptional user experiences
@@ -89,18 +113,13 @@ const About = () => {
                 <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Professional Journey</h3>
                 <div className="space-y-4 text-gray-600 dark:text-gray-300">
                   <p>
-                    I'm a dedicated IT professional with a strong foundation in full-stack development, 
-                    cloud systems, and technical support. My journey began with a Bachelor's degree in 
-                    Information Management, where I achieved a perfect 4.0 GPA.
+                    I’m an IT professional who loves turning ideas into digital experiences — whether it’s a sleek, responsive website, a feature‑rich mobile app, or an AI‑powered tool that feels almost magical. My journey started with a Bachelor’s in Information Management (GPA 4.0/4.0) and continued with a Master’s in Information Technology at QUT (GPA 6.107/7.0), earning multiple academic excellence awards including Best Research Paper.
                   </p>
                   <p>
-                    Currently pursuing a Master of Information Technology at Queensland University of Technology 
-                    with a GPA of 6.107/7.0, I've been recognized with multiple academic excellence awards 
-                    and have won the Best Research Paper Award.
+                    During my career, I built AI‑driven, scalable web and mobile applications, delivering seamless and reliable user experiences. Also,I brought concepts to life through AR/VR simulations for STEM education, blending creativity with engineering precision to make learning more engaging.
                   </p>
                   <p>
-                    My experience spans from software development at Braiv Tech to AR/VR development at 
-                    Imagine Realities, always focusing on creating practical solutions that make a real impact.
+                    I work across the full stack, from frontend elegance to backend robustness, powered by expertise in cloud systems and CI/CD. My mission is simple: craft digital products that are beautiful to use, built to last, and designed to make a real‑world impact.
                   </p>
                 </div>
               </Card>
