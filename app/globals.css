@@ -25,6 +25,8 @@
   will-change: transform, text-shadow;
   backface-visibility: hidden;
   perspective: 1000px;
+  transform-style: preserve-3d;
+  isolation: isolate;
 }
 
 /* Light mode name glow */
@@ -48,6 +50,8 @@ html:not(.dark) .name-glow-subtle {
   will-change: transform, text-shadow;
   backface-visibility: hidden;
   perspective: 1000px;
+  transform-style: preserve-3d;
+  isolation: isolate;
 }
 
 :root {
@@ -154,6 +158,17 @@ body {
 }
 
 /* Animations */
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes pulse-slow {
   0%, 100% {
     opacity: 1;
@@ -447,36 +462,50 @@ html:not(.dark) {
 }
 
 @keyframes name-glow-scale {
-  0%, 100% {
+  0% {
     text-shadow: 
       0 0 6px rgba(59, 130, 246, 0.4),
       0 0 12px rgba(59, 130, 246, 0.25),
       0 0 18px rgba(59, 130, 246, 0.15);
-    transform: scale3d(1, 1, 1) translateZ(0);
+    transform: scale3d(1.0, 1.0, 1.0) translate3d(0, 0, 0);
   }
   50% {
     text-shadow: 
       0 0 8px rgba(59, 130, 246, 0.5),
       0 0 16px rgba(59, 130, 246, 0.35),
       0 0 24px rgba(59, 130, 246, 0.2);
-    transform: scale3d(1.02, 1.02, 1) translateZ(0);
+    transform: scale3d(1.02, 1.02, 1.0) translate3d(0, 0, 0);
+  }
+  100% {
+    text-shadow: 
+      0 0 6px rgba(59, 130, 246, 0.4),
+      0 0 12px rgba(59, 130, 246, 0.25),
+      0 0 18px rgba(59, 130, 246, 0.15);
+    transform: scale3d(1.0, 1.0, 1.0) translate3d(0, 0, 0);
   }
 }
 
 @keyframes name-glow-scale-light {
-  0%, 100% {
+  0% {
     text-shadow: 
       0 0 4px rgba(59, 130, 246, 0.3),
       0 0 8px rgba(59, 130, 246, 0.2),
       0 0 12px rgba(59, 130, 246, 0.1);
-    transform: scale3d(1, 1, 1) translateZ(0);
+    transform: scale3d(1.0, 1.0, 1.0) translate3d(0, 0, 0);
   }
   50% {
     text-shadow: 
       0 0 6px rgba(59, 130, 246, 0.4),
       0 0 12px rgba(59, 130, 246, 0.3),
       0 0 18px rgba(59, 130, 246, 0.15);
-    transform: scale3d(1.02, 1.02, 1) translateZ(0);
+    transform: scale3d(1.02, 1.02, 1.0) translate3d(0, 0, 0);
+  }
+  100% {
+    text-shadow: 
+      0 0 4px rgba(59, 130, 246, 0.3),
+      0 0 8px rgba(59, 130, 246, 0.2),
+      0 0 12px rgba(59, 130, 246, 0.1);
+    transform: scale3d(1.0, 1.0, 1.0) translate3d(0, 0, 0);
   }
 }
 
