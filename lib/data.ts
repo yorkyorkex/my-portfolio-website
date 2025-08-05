@@ -31,13 +31,13 @@ export const experiences: Experience[] = [
   {
     id: '2',
     company: 'Imagine Realities',
-    position: 'Unity Project Developer',
+    position: 'Software Developer',
     location: 'Brisbane',
     duration: 'June 2024 - February 2025',
     description: [
-      'Engaged students by developing an AR/VR Unity app for STEM events',
-      'Designed immersive 3D environments, improving learning engagement and user retention',
-      'Collaborated with educators to align features with curriculum, increasing usability'
+      'Engaged numerous students by developing an AR/VR application using C# and .NET for STEM events',
+      'Designed an immersive 3D Gaming project in Unity, enhancing learning engagement',
+      'Collaborated with tech educators to align .NET app features with the curriculum, increasing usability'
     ],
     technologies: ['Unity', 'C#', 'AR/VR', '3D Development'],
     achievements: [
