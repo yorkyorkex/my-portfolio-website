@@ -34,8 +34,31 @@ const Footer = () => {
             {/* Brand & Description */}
             <div className="md:col-span-1">
               <div className="mb-4">
-                <h3 className="text-2xl font-bold gradient-text">
-                  Hsiang-Jen Yu
+                <h3 className="text-2xl font-bold">
+                  <div style={{
+                    position: 'relative',
+                    display: 'inline-block',
+                    height: 'auto'
+                  }}>
+                    {/* 隱藏的佔位元素來保持空間 */}
+                    <span style={{
+                      visibility: 'hidden',
+                      display: 'inline-block',
+                      paddingBottom: '4px'
+                    }} className="gradient-text text-2xl font-bold">
+                      Hsiang-Jen Yu
+                    </span>
+                    
+                    {/* 實際顯示的動畫元素 */}
+                    <span className="gradient-text name-glow-subtle"
+                    style={{
+                      display: 'inline-block',
+                      paddingBottom: '4px',
+                      whiteSpace: 'nowrap'
+                    }}>
+                      Hsiang-Jen Yu
+                    </span>
+                  </div>
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mt-2">
                   Full-Stack Developer & IT Professional

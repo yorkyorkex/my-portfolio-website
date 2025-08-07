@@ -89,9 +89,32 @@ const Navigation = () => {
                 e.preventDefault()
                 scrollToSection('#home')
               }}
-              className="text-2xl font-bold gradient-text hover:scale-105 transition-transform"
+              className="text-2xl font-bold hover:scale-105 transition-transform"
             >
-              HJ.Yu
+              <div style={{
+                position: 'relative',
+                display: 'inline-block',
+                height: 'auto'
+              }}>
+                {/* 隱藏的佔位元素來保持空間 */}
+                <span style={{
+                  visibility: 'hidden',
+                  display: 'inline-block',
+                  paddingBottom: '4px'
+                }} className="gradient-text text-2xl font-bold">
+                  HJ.Yu
+                </span>
+                
+                {/* 實際顯示的動畫元素 */}
+                <span className="gradient-text name-glow-subtle"
+                style={{
+                  display: 'inline-block',
+                  paddingBottom: '4px',
+                  whiteSpace: 'nowrap'
+                }}>
+                  HJ.Yu
+                </span>
+              </div>
             </a>
           </div>
 
