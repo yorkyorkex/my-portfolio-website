@@ -91,7 +91,7 @@ const Experience = () => {
 
                     {/* Content */}
                     <div className="flex-1 pb-8">
-                      <Card className="p-6 hover:shadow-lg transition-shadow">
+                      <Card className="card-experience p-6 transition-shadow relative">
                         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                           <div>
                             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
@@ -179,9 +179,9 @@ const Experience = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid gap-6">
               {volunteerWork.map((vol) => (
-                <Card key={vol.id} className="p-6 hover:shadow-lg transition-shadow">
+                <Card key={vol.id} className="card-volunteer p-6 transition-shadow">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="volunteer-icon w-12 h-12 bg-purple-100 dark:bg-purple-900/20 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Trophy className="w-6 h-6 text-purple-600 dark:text-purple-400" />
                     </div>
                     <div className="flex-1">

@@ -68,11 +68,11 @@ const About = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           {stats.map((stat, index) => (
-            <Card key={index} variant="glass" className="text-center p-6 hover:scale-105 transition-transform">
+            <Card key={index} variant="glass" className="card-stats text-center p-6 transition-transform">
               <div className="text-primary-600 dark:text-primary-400 mb-3 flex justify-center">
                 {stat.icon}
               </div>
-              <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">
+              <div className="stat-number text-3xl font-bold text-gray-900 dark:text-white mb-1">
                 {stat.value}
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
@@ -106,9 +106,9 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           {activeTab === 'overview' && (
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="p-8">
+              <Card className="card-overview p-8">
                 <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Professional Journey</h3>
-                <div className="space-y-4 text-gray-600 dark:text-gray-300">
+                <div className="content space-y-4 text-gray-600 dark:text-gray-300">
                   <p>
                     I’m an IT professional who loves turning ideas into digital experiences — whether it’s a sleek, responsive website, a feature‑rich mobile app, or an AI‑powered tool that feels almost magical. My journey started with a Bachelor’s in Information Management (GPA 4.0/4.0) and continued with a Master’s in Information Technology at QUT (GPA 6.107/7.0), earning multiple academic excellence awards including Best Research Paper.
                   </p>
@@ -121,9 +121,9 @@ const About = () => {
                 </div>
               </Card>
 
-              <Card className="p-8">
+              <Card className="card-overview p-8">
                 <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">What Drives Me</h3>
-                <div className="space-y-4">
+                <div className="content space-y-4">
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-primary-100 dark:bg-primary-900/20 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Zap className="w-4 h-4 text-primary-600 dark:text-primary-400" />
@@ -167,7 +167,7 @@ const About = () => {
           {activeTab === 'skills' && (
             <div className="space-y-8">
               {skillCategories.map((category) => (
-                <Card key={category.key} className="p-6">
+                <Card key={category.key} className={`card-skills ${category.key} p-6`}>
                   <h3 className="text-xl font-bold mb-6 text-gray-900 dark:text-white">
                     {category.label}
                   </h3>
@@ -177,7 +177,7 @@ const About = () => {
                         key={skill.name}
                         variant="glass"
                         hover
-                        className="p-4 flex flex-col items-center justify-center text-center min-h-[120px] group cursor-pointer"
+                        className="skill-tag p-4 flex flex-col items-center justify-center text-center min-h-[120px] group cursor-pointer"
                       >
                         <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-200">
                           {skill.icon}

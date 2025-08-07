@@ -563,6 +563,299 @@ html:not(.dark) {
   }
 }
 
+/* ===============================
+   Card Animation & Light Effects
+   =============================== */
+
+/* Stats Card Animations */
+@keyframes stats-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+    border-color: rgba(59, 130, 246, 0.4);
+  }
+}
+
+@keyframes stats-pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes counter-animation {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Project Card Animations */
+@keyframes project-3d-tilt {
+  0% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(-5deg) rotateY(5deg) scale(1.03);
+  }
+}
+
+@keyframes rainbow-border {
+  0% {
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+  }
+  25% {
+    border-color: rgba(147, 51, 234, 0.5);
+    box-shadow: 0 0 30px rgba(147, 51, 234, 0.3);
+  }
+  50% {
+    border-color: rgba(34, 197, 94, 0.5);
+    box-shadow: 0 0 30px rgba(34, 197, 94, 0.3);
+  }
+  75% {
+    border-color: rgba(249, 115, 22, 0.5);
+    box-shadow: 0 0 30px rgba(249, 115, 22, 0.3);
+  }
+  100% {
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+  }
+}
+
+@keyframes project-image-zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Experience Card Animations */
+@keyframes timeline-slide-in {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes professional-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.2);
+  }
+}
+
+@keyframes side-light-bar {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+/* Volunteer Card Animations */
+@keyframes volunteer-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes volunteer-warm-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(147, 51, 234, 0.15);
+  }
+}
+
+@keyframes icon-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Contact Method Card Animations */
+@keyframes contact-tilt {
+  0% {
+    transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(500px) rotateX(-10deg) rotateY(10deg);
+  }
+}
+
+@keyframes icon-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes contact-method-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px var(--contact-glow-color, rgba(59, 130, 246, 0.1));
+  }
+  50% {
+    box-shadow: 0 0 30px var(--contact-glow-color, rgba(59, 130, 246, 0.2));
+  }
+}
+
+/* Reference Card Animations */
+@keyframes reference-scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes border-glow {
+  0%, 100% {
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.1);
+  }
+  50% {
+    border-color: rgba(59, 130, 246, 0.6);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+  }
+}
+
+/* Form Card Animations */
+@keyframes form-breathe {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.1);
+  }
+  50% {
+    transform: scale(1.005);
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
+  }
+}
+
+@keyframes form-focus-glow {
+  0% {
+    box-shadow: 0 0 0 2px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+  }
+}
+
+/* CTA Card Animations */
+@keyframes magnetic-attract {
+  0%, 100% {
+    transform: scale(1) translateY(0px);
+  }
+  25% {
+    transform: scale(1.02) translateY(-2px);
+  }
+  75% {
+    transform: scale(0.98) translateY(2px);
+  }
+}
+
+@keyframes cta-summon-glow {
+  0%, 100% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 60px rgba(59, 130, 246, 0.4);
+  }
+}
+
+@keyframes button-pulse-glow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+  }
+}
+
+/* Overview Card Animations */
+@keyframes content-expand {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 1000px;
+    opacity: 1;
+  }
+}
+
+@keyframes personal-theme-glow {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(59, 130, 246, 0.15);
+  }
+}
+
+/* Skills Card Animations */
+@keyframes skill-progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--skill-level, 100%);
+  }
+}
+
+@keyframes skill-tag-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes skill-category-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px var(--category-glow-color, rgba(59, 130, 246, 0.1));
+  }
+  50% {
+    box-shadow: 0 0 30px var(--category-glow-color, rgba(59, 130, 246, 0.15));
+  }
+}
+
 .animate-slide-reveal {
   animation: slide-reveal 0.8s ease-out;
 }
@@ -599,6 +892,174 @@ html:not(.dark) {
   animation: gradient-shift 4s ease-in-out infinite;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+/* ================================
+   Card Animation Classes
+   ================================ */
+
+/* Stats Cards */
+.card-stats {
+  animation: stats-glow 3s ease-in-out infinite, stats-pulse-scale 2.5s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+.card-stats .stat-number {
+  animation: counter-animation 1s ease-out;
+}
+
+/* Project Cards */
+.card-project:hover {
+  animation: project-3d-tilt 0.3s ease-out forwards, rainbow-border 2s linear infinite;
+  transform-style: preserve-3d;
+  will-change: transform, box-shadow;
+}
+
+.card-project:hover .project-image {
+  animation: project-image-zoom 0.3s ease-out forwards;
+  will-change: transform;
+}
+
+/* Experience Cards */
+.card-experience {
+  animation: timeline-slide-in 0.6s ease-out, professional-glow 4s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+.card-experience::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.3));
+  border-radius: 2px;
+  animation: side-light-bar 0.8s ease-out;
+  will-change: height, opacity;
+}
+
+/* Volunteer Cards */
+.card-volunteer {
+  animation: volunteer-float 3s ease-in-out infinite, volunteer-warm-glow 4s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+.card-volunteer .volunteer-icon {
+  animation: icon-pulse 2s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Contact Method Cards */
+.card-contact-method:hover {
+  animation: contact-tilt 0.3s ease-out forwards, contact-method-glow 2s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+.card-contact-method:hover .contact-icon {
+  animation: icon-bounce 1s ease-out;
+  will-change: transform;
+}
+
+.card-contact-method.email {
+  --contact-glow-color: rgba(59, 130, 246, 0.2);
+}
+
+.card-contact-method.phone {
+  --contact-glow-color: rgba(34, 197, 94, 0.2);
+}
+
+.card-contact-method.location {
+  --contact-glow-color: rgba(249, 115, 22, 0.2);
+}
+
+/* Reference Cards */
+.card-reference:hover {
+  animation: reference-scale 0.3s ease-out forwards, border-glow 2s ease-in-out infinite;
+  will-change: transform, box-shadow, border-color;
+}
+
+/* Form Cards */
+.card-form {
+  animation: form-breathe 6s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+.card-form:focus-within {
+  animation: form-focus-glow 0.3s ease-out forwards;
+}
+
+/* CTA Cards */
+.card-cta {
+  animation: magnetic-attract 3s ease-in-out infinite, cta-summon-glow 4s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+.card-cta:hover {
+  animation: magnetic-attract 1.5s ease-in-out infinite, cta-summon-glow 2s ease-in-out infinite;
+}
+
+.card-cta .cta-button {
+  animation: button-pulse-glow 2s ease-in-out infinite;
+  will-change: transform, box-shadow;
+}
+
+/* Overview Cards */
+.card-overview {
+  animation: personal-theme-glow 5s ease-in-out infinite;
+  will-change: box-shadow;
+}
+
+.card-overview .content {
+  animation: content-expand 0.8s ease-out;
+  will-change: max-height, opacity;
+}
+
+/* Skills Cards */
+.card-skills {
+  animation: skill-category-glow 4s ease-in-out infinite;
+  will-change: box-shadow;
+}
+
+.card-skills.frontend {
+  --category-glow-color: rgba(59, 130, 246, 0.15);
+}
+
+.card-skills.backend {
+  --category-glow-color: rgba(34, 197, 94, 0.15);
+}
+
+.card-skills.cloud {
+  --category-glow-color: rgba(168, 85, 247, 0.15);
+}
+
+.card-skills.tools {
+  --category-glow-color: rgba(249, 115, 22, 0.15);
+}
+
+.card-skills.soft {
+  --category-glow-color: rgba(236, 72, 153, 0.15);
+}
+
+.card-skills .skill-tag {
+  animation: skill-tag-float 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+.card-skills .skill-progress {
+  animation: skill-progress 2s ease-out;
+  will-change: width;
+}
+
+/* Intersection Observer Animation Classes */
+.card-animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.card-animate-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Performance optimizations */

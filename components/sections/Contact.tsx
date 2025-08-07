@@ -196,10 +196,20 @@ const Contact = () => {
 
               {/* Contact Methods */}
               <div className="space-y-4">
-                {contactMethods.map((method, index) => (
-                  <Card key={index} className="p-4 hover:shadow-md transition-shadow">
+                {contactMethods.map((method, index) => {
+                  const getContactType = (label: string) => {
+                    switch (label.toLowerCase()) {
+                      case 'email': return 'email';
+                      case 'phone': return 'phone';
+                      case 'location': return 'location';
+                      default: return 'email';
+                    }
+                  };
+                  
+                  return (
+                  <Card key={index} className={`card-contact-method ${getContactType(method.label)} p-4 transition-shadow`}>
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/20 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400">
+                      <div className="contact-icon w-12 h-12 bg-primary-100 dark:bg-primary-900/20 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400">
                         {method.icon}
                       </div>
                       <div className="flex-1">
@@ -224,7 +234,8 @@ const Contact = () => {
                       </div>
                     </div>
                   </Card>
-                ))}
+                  )
+                })}
               </div>
 
               {/* Social Links */}
@@ -255,7 +266,7 @@ const Contact = () => {
                 </h4>
                 <div className="space-y-3">
                   {references.slice(0, 2).map((ref, index) => (
-                    <Card key={index} variant="bordered" className="p-4">
+                    <Card key={index} variant="bordered" className="card-reference p-4">
                       <div className="text-sm">
                         <p className="font-semibold text-gray-900 dark:text-white">
                           {ref.name}
@@ -275,7 +286,7 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div>
-              <Card className="p-8">
+              <Card className="card-form p-8">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                   Send Message
                 </h3>

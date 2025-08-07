@@ -89,11 +89,11 @@ const Projects = () => {
           {filteredProjects.map((project) => (
             <Card 
               key={project.id} 
-              className="overflow-hidden hover:shadow-xl transition-all duration-300 group"
+              className="card-project overflow-hidden transition-all duration-300 group"
               hover
             >
               {/* Project Image/Placeholder */}
-              <div className="h-48 relative overflow-hidden bg-gradient-to-br from-primary-500 to-purple-600">
+              <div className="project-image h-48 relative overflow-hidden bg-gradient-to-br from-primary-500 to-purple-600">
                 {project.imageUrl ? (
                   <>
                     <Image 
@@ -214,7 +214,7 @@ const Projects = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <Card variant="glass" className="inline-block p-8">
+          <Card variant="glass" className="card-cta inline-block p-8">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Interested in My Work?
             </h3>
@@ -224,6 +224,7 @@ const Projects = () => {
             </p>
             <Button
               size="lg"
+              className="cta-button"
               onClick={() => {
                 const contactSection = document.getElementById('contact')
                 if (contactSection) {
