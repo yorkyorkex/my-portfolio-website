@@ -315,6 +315,36 @@ export const volunteerWork: VolunteerWork[] = [
 // Real projects showcase
 export const projects: Project[] = [
   {
+    id: 'ai-dice-agent-mcp',
+    title: 'AI Dice Agent - MCP Server for Claude Desktop',
+    description: 'Intelligent AI agent providing dice rolling functionality through Model Context Protocol for Claude Desktop applications',
+    longDescription: 'An advanced AI agent built as a Model Context Protocol (MCP) server that seamlessly integrates with Claude Desktop to provide intelligent dice rolling capabilities. Designed for tabletop gaming, probability simulations, and random number generation with AI-assisted decision making. Features comprehensive dice support, interactive web interface, and smart gaming assistance.',
+    technologies: ['TypeScript', 'Node.js', 'MCP Protocol', 'Vercel', 'Web API', 'Claude Desktop', 'AI Integration', 'Server Development'],
+    features: [
+      'AI-powered Model Context Protocol (MCP) server implementation',
+      'Intelligent dice rolling with contextual game assistance',
+      'Support for standard gaming dice (d2, d4, d6, d8, d10, d12, d20, d100)',
+      'Custom dice configuration with AI-suggested optimal settings',
+      'Smart multiple dice rolling with probability analysis',
+      'Interactive web interface for testing agent functionality',
+      'Real-time AI-assisted gaming decisions and recommendations',
+      'Seamless Claude Desktop integration for natural language gaming',
+      'Vercel deployment with reliable cloud hosting'
+    ],
+    githubUrl: undefined,
+    liveUrl: 'https://rolldice-mcpserver-seven.vercel.app/',
+    liveLabel: 'Live Demo',
+    imageUrl: '/8.png',
+    category: 'backend',
+    status: 'completed',
+    highlights: [
+      'Built intelligent AI agent for Claude Desktop integration',
+      'Implemented advanced Model Context Protocol (MCP) server',
+      'Created AI-assisted dice system for enhanced gaming experience',
+      'Developed comprehensive testing interface with real-time AI feedback'
+    ]
+  },
+  {
     id: 'ai-media-translation',
     title: 'AI-Powered Media Translation & Dubbing Platform',
     description: 'An AI-driven platform enabling media translation, multilingual dubbing, and customized video playbook for global audiences.',
