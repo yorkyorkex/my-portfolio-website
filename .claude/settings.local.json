@@ -17,7 +17,8 @@
       "WebFetch(domain:jasoneml.vercel.app)",
       "Bash(npm run type-check:*)",
       "Bash(npm run lint)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "WebFetch(domain:github.com)"
     ],
     "deny": []
   }

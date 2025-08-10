@@ -315,6 +315,35 @@ export const volunteerWork: VolunteerWork[] = [
 // Real projects showcase
 export const projects: Project[] = [
   {
+    id: 'propertyhub-rental-platform',
+    title: 'PropertyHub - Modern E-Commerce Rental Platform',
+    description: 'Full-stack rental property platform with advanced search, favorites, and landlord contact features',
+    longDescription: 'A comprehensive e-commerce rental platform built with Next.js and TypeScript, designed to streamline property rental processes. Features advanced property search and filtering, user favorites management, responsive design, and direct landlord communication. Built with modern web technologies and optimized for excellent user experience across all devices.',
+    technologies: ['Next.js 14', 'React', 'TypeScript', 'Tailwind CSS', 'SQLite', 'Better-SQLite3', 'API Routes', 'Vercel', 'Responsive Design'],
+    features: [
+      'Advanced property search and filtering system',
+      'User favorites management for saved properties',
+      'Responsive design optimized for all devices',
+      'Direct landlord contact functionality',
+      'Detailed property information display (price, location, amenities)',
+      'Modern UI with clean, intuitive design',
+      'SQLite database integration for data persistence',
+      'RESTful API routes for seamless data management',
+      'Vercel deployment for reliable hosting'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/E-commerce-Rental-Website',
+    liveUrl: 'https://e-commerce-rental-website.vercel.app/',
+    imageUrl: '/9.png',
+    category: 'fullstack',
+    status: 'completed',
+    highlights: [
+      'Built comprehensive rental property search platform',
+      'Implemented advanced filtering and favorites system',
+      'Designed modern responsive UI for optimal user experience',
+      'Integrated SQLite database with RESTful API architecture'
+    ]
+  },
+  {
     id: 'ai-dice-agent-mcp',
     title: 'AI Dice Agent - MCP Server for Claude Desktop',
     description: 'Intelligent AI agent providing dice rolling functionality through Model Context Protocol for Claude Desktop applications',
