@@ -315,6 +315,36 @@ export const volunteerWork: VolunteerWork[] = [
 // Real projects showcase
 export const projects: Project[] = [
   {
+    id: 'nova-ai-chat-assistant',
+    title: 'Nova Chat - Intelligent AI Assistant',
+    description: 'Versatile AI chatbot with neon UI design, enabling seamless conversations across multiple domains from travel planning to code analysis',
+    longDescription: 'An intelligent AI-powered chat assistant built with modern web technologies and integrated with advanced language models. Nova Chat features a sleek neon-themed interface and provides versatile conversational AI capabilities, supporting everything from travel planning and creative brainstorming to technical code explanations and content rewriting. Built for speed and user experience with Next.js and Vercel AI SDK.',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Vercel AI SDK', 'AI/ML Integration', 'Responsive Design', 'Modern UI/UX', 'OpenAI API', 'Streaming Responses', 'Real-time Chat'],
+    features: [
+      'Intelligent conversational AI with multi-domain expertise',
+      'Sleek neon-themed user interface design',
+      'Real-time streaming responses for instant feedback',
+      'Versatile functionality: trip planning, code explanation, brainstorming',
+      'Content rewriting and text optimization capabilities',
+      'Fast response times with optimized AI integration',
+      'Clean, minimalist chat interface for enhanced UX',
+      'Built with Next.js for optimal performance and SEO',
+      'Vercel AI SDK integration for advanced AI features',
+      'Responsive design compatible with all devices'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/chatbot',
+    liveUrl: 'https://chatbot-beige-one-96.vercel.app/',
+    imageUrl: '/10.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Built intelligent AI assistant with multi-domain conversational abilities',
+      'Designed modern neon-themed UI for enhanced user engagement',
+      'Integrated Vercel AI SDK for advanced streaming responses',
+      'Developed versatile AI features supporting diverse use cases'
+    ]
+  },
+  {
     id: 'propertyhub-rental-platform',
     title: 'PropertyHub - Modern E-Commerce Rental Platform',
     description: 'Full-stack rental property platform with advanced search, favorites, and landlord contact features',

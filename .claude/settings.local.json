@@ -18,7 +18,8 @@
       "Bash(npm run type-check:*)",
       "Bash(npm run lint)",
       "Bash(npm run build:*)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:chatbot-beige-one-96.vercel.app)"
     ],
     "deny": []
   }
