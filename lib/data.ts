@@ -315,6 +315,35 @@ export const volunteerWork: VolunteerWork[] = [
 // Real projects showcase
 export const projects: Project[] = [
   {
+    id: 'backroads-explorer',
+    title: 'BackRoads Explorer - Travel & Tourism Website',
+    description: 'Modern travel website showcasing destinations and experiences with responsive React architecture',
+    longDescription: 'A comprehensive travel and tourism platform built with React.js, designed to inspire wanderlust and showcase beautiful destinations. Features responsive design, interactive user interface, and optimized performance for seamless browsing across all devices. Built with Create React App and deployed on Netlify for reliable hosting and fast global access.',
+    technologies: ['React.js', 'JavaScript', 'HTML5', 'CSS3', 'Create React App', 'Netlify', 'Responsive Design', 'Modern Web Standards'],
+    features: [
+      'Interactive travel destination showcase',
+      'Responsive design optimized for all device sizes',
+      'Modern React component architecture with reusable components',
+      'Fast loading performance with optimized asset management',
+      'Professional travel-focused user interface design',
+      'Cross-browser compatibility and web accessibility standards',
+      'Netlify deployment with continuous integration pipeline',
+      'SEO-friendly structure for better search visibility',
+      'Mobile-first approach for optimal travel browsing experience'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/backroads-app',
+    liveUrl: 'https://backroads-app-york.netlify.app/',
+    imageUrl: '/12.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Built modern travel platform with React.js architecture',
+      'Implemented responsive design for optimal mobile travel browsing',
+      'Deployed production-ready application with Netlify hosting',
+      'Demonstrated clean code practices with component-based design'
+    ]
+  },
+  {
     id: 'reactcraft-studio',
     title: 'ReactCraft Studio - E-Book Store',
     description: 'Interactive e-book store built with React fundamentals, demonstrating core React concepts and modern web development practices',
