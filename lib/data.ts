@@ -315,6 +315,35 @@ export const volunteerWork: VolunteerWork[] = [
 // Real projects showcase
 export const projects: Project[] = [
   {
+    id: 'reactcraft-studio',
+    title: 'ReactCraft Studio - E-Book Store',
+    description: 'Interactive e-book store built with React fundamentals, demonstrating core React concepts and modern web development practices',
+    longDescription: 'A comprehensive e-book store application showcasing fundamental React development skills and modern web application architecture. Built as part of a React course curriculum, this project demonstrates mastery of React components, state management, event handling, and responsive design. Features an intuitive user interface for browsing and managing digital book collections with clean, professional design.',
+    technologies: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Create React App', 'Responsive Design', 'Modern Web Standards', 'Vercel Deployment'],
+    features: [
+      'Interactive e-book catalog with browsing functionality',
+      'Responsive design optimized for all device sizes',
+      'Component-based React architecture demonstrating best practices',
+      'Modern JavaScript ES6+ features and React hooks',
+      'Clean user interface with intuitive navigation',
+      'State management for shopping cart and user interactions',
+      'Event handling for user interactions and form processing',
+      'Professional deployment pipeline with Vercel hosting',
+      'Cross-browser compatibility and web standards compliance'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/react-course-project',
+    liveUrl: 'https://react-course-project-sooty.vercel.app/',
+    imageUrl: '/11.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Mastered React fundamentals through practical e-book store implementation',
+      'Applied modern JavaScript and web development best practices',
+      'Demonstrated component-based architecture and state management',
+      'Successfully deployed production-ready application to Vercel'
+    ]
+  },
+  {
     id: 'nova-ai-chat-assistant',
     title: 'Nova Chat - Intelligent AI Assistant',
     description: 'Versatile AI chatbot with neon UI design, enabling seamless conversations across multiple domains from travel planning to code analysis',

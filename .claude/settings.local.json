@@ -19,7 +19,8 @@
       "Bash(npm run lint)",
       "Bash(npm run build:*)",
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:chatbot-beige-one-96.vercel.app)"
+      "WebFetch(domain:chatbot-beige-one-96.vercel.app)",
+      "WebFetch(domain:react-course-project-sooty.vercel.app)"
     ],
     "deny": []
   }
