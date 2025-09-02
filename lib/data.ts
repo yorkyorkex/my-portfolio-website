@@ -344,6 +344,35 @@ export const projects: Project[] = [
     ]
   },
   {
+    id: 'chatconnect-messaging-app',
+    title: 'ChatConnect - Real-Time Messaging Application',
+    description: 'Modern WhatsApp-inspired messaging application built with React, featuring real-time chat functionality and responsive design',
+    longDescription: 'A feature-rich real-time messaging application inspired by WhatsApp, built with React and modern web technologies. Designed to demonstrate proficiency in building complex user interfaces, state management, and interactive communication features. Features a clean, intuitive interface that replicates the familiar messaging experience with modern web standards.',
+    technologies: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Create React App', 'Real-time Communication', 'Responsive Design', 'Netlify'],
+    features: [
+      'Real-time messaging interface with familiar WhatsApp-like design',
+      'Interactive chat components with message threading',
+      'Contact list management and user profiles',
+      'Responsive design optimized for mobile and desktop devices',
+      'Modern React component architecture with hooks and state management',
+      'Clean user interface with intuitive navigation patterns',
+      'Message status indicators and timestamps',
+      'Cross-browser compatibility and modern web standards',
+      'Netlify deployment with continuous integration'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/whats-app',
+    liveUrl: 'https://whats-app-york.netlify.app/',
+    imageUrl: '/13.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Built real-time messaging interface with React fundamentals',
+      'Implemented familiar WhatsApp-inspired user experience',
+      'Demonstrated modern JavaScript and component-based architecture',
+      'Deployed production-ready messaging application'
+    ]
+  },
+  {
     id: 'reactcraft-studio',
     title: 'ReactCraft Studio - E-Book Store',
     description: 'Interactive e-book store built with React fundamentals, demonstrating core React concepts and modern web development practices',
