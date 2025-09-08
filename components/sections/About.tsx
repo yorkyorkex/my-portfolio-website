@@ -10,9 +10,9 @@ const About = () => {
   const [activeTab, setActiveTab] = useState<'overview' | 'skills' | 'education' | 'awards' | 'certifications'>('overview')
 
   const stats = [
-    { icon: <Code2 className="w-6 h-6" />, label: 'Years of Experience', value: '4+' },
-    { icon: <Globe className="w-6 h-6" />, label: 'Projects Completed', value: '15+' },
-    { icon: <Users className="w-6 h-6" />, label: 'Happy Clients', value: '10+' },
+    { icon: <Code2 className="w-6 h-6" />, label: 'Years of Experience', value: '5+' },
+    { icon: <Globe className="w-6 h-6" />, label: 'Projects Completed', value: '30+' },
+    { icon: <Users className="w-6 h-6" />, label: 'Happy Clients', value: '50+' },
     { icon: <Zap className="w-6 h-6" />, label: 'Technologies', value: '60+' }
   ]
 

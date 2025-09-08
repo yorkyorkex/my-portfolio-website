@@ -635,31 +635,33 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 'task-management-mobile',
-    title: 'Task Management Mobile Application',
-    description: 'Mobile-optimized task management application with modern UX',
-    longDescription: 'A mobile-first task management application built with modern web technologies. Features intuitive touch interface, offline capability, and seamless task organization for productivity on-the-go.',
-    technologies: ['React', 'PWA', 'TypeScript', 'CSS3', 'Local Storage', 'Service Workers'],
+    id: 'reviews-carousel-react',
+    title: 'Reviews Carousel - Interactive Customer Testimonials',
+    description: 'Dynamic React application featuring an interactive reviews carousel with seamless navigation and random selection functionality',
+    longDescription: 'An elegant customer reviews carousel built with React to demonstrate advanced state management and user interaction patterns. Features smooth navigation through testimonials, random review discovery, and responsive design. Built to showcase mastery of React fundamentals including array manipulation, state control, and component-based architecture while creating an engaging user experience for customer feedback display.',
+    technologies: ['React', 'JavaScript ES6+', 'CSS3', 'HTML5', 'React Hooks', 'State Management', 'Component Architecture', 'React Icons', 'Responsive Design'],
     features: [
-      'Mobile-first responsive design',
-      'Touch-optimized interface',
-      'Offline functionality',
-      'Task creation and organization',
-      'Progress tracking',
-      'Category management',
-      'Priority settings',
-      'Dark/Light theme support'
+      'Interactive reviews carousel with smooth navigation',
+      'Previous/Next navigation with circular array traversal',
+      'Random review selection for content discovery',
+      'Dynamic rendering of customer testimonials',
+      'Responsive design optimized for all devices',
+      'Clean testimonial display with images, names, and job titles',
+      'React state management for current review index',
+      'Modulus operator implementation for seamless cycling',
+      'Modern JavaScript array manipulation techniques',
+      'Professional UI design for customer feedback showcase'
     ],
-    githubUrl: 'https://github.com/yorkyorkex/todo-mobile-app',
-    liveUrl: 'https://todo-mobile-app.vercel.app/',
-    imageUrl: '/6.png',
-    category: 'mobile',
+    githubUrl: 'https://github.com/yorkyorkex/03-reviews',
+    liveUrl: 'https://03-reviews-york.netlify.app/',
+    imageUrl: '/17.png',
+    category: 'web',
     status: 'completed',
     highlights: [
-      'Mobile-optimized UX',
-      'Progressive Web App',
-      'Offline-first approach',
-      'Intuitive task management'
+      'Built interactive reviews carousel with React state management',
+      'Implemented circular navigation using modulus operator for seamless cycling',
+      'Created dynamic customer testimonial showcase with professional design',
+      'Demonstrated advanced array manipulation and user interaction patterns'
     ]
   },
   {
@@ -719,6 +721,91 @@ export const projects: Project[] = [
       'Demonstrated state management and component composition patterns',
       'Built educational showcase with clean, reusable React components',
       'Applied modern JavaScript and Vite for optimized development workflow'
+    ]
+  },
+  {
+    id: 'task-management-mobile',
+    title: 'Task Management Mobile Application',
+    description: 'Mobile-optimized task management application with modern UX',
+    longDescription: 'A mobile-first task management application built with modern web technologies. Features intuitive touch interface, offline capability, and seamless task organization for productivity on-the-go.',
+    technologies: ['React', 'PWA', 'TypeScript', 'CSS3', 'Local Storage', 'Service Workers'],
+    features: [
+      'Mobile-first responsive design',
+      'Touch-optimized interface',
+      'Offline functionality',
+      'Task creation and organization',
+      'Progress tracking',
+      'Category management',
+      'Priority settings',
+      'Dark/Light theme support'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/todo-mobile-app',
+    liveUrl: 'https://todo-mobile-app.vercel.app/',
+    imageUrl: '/6.png',
+    category: 'mobile',
+    status: 'completed',
+    highlights: [
+      'Mobile-optimized UX',
+      'Progressive Web App',
+      'Offline-first approach',
+      'Intuitive task management'
+    ]
+  },
+  {
+    id: 'portfolio-website',
+    title: 'Portfolio Website',
+    description: 'Professional portfolio website showcasing development skills and experience',
+    longDescription: 'A modern, responsive portfolio website built with Next.js and TypeScript. Features dark mode, dynamic skills showcase, and comprehensive project documentation. Optimized for performance and SEO with clean, professional design.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React', 'Vercel'],
+    features: [
+      'Dark mode by default with theme toggle',
+      'Dynamic skills showcase with 60+ technologies',
+      'Responsive design optimized for all devices',
+      'Performance optimized with Next.js',
+      'SEO optimization and metadata',
+      'Interactive animations and transitions',
+      'Professional typography and design system'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/my-portfolio-website',
+    liveUrl: 'https://my-portfolio-website-livid-two.vercel.app/',
+    imageUrl: '/7.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Modern Next.js 14 architecture',
+      'Comprehensive skill showcase',
+      'Professional design system',
+      'Performance optimized'
+    ]
+  },
+  {
+    id: 'advanced-react-mastery',
+    title: 'Advanced React Mastery - Interactive Learning Showcase',
+    description: 'Comprehensive React learning project demonstrating 15 advanced concepts through interactive examples and hands-on implementations',
+    longDescription: 'An extensive React learning showcase featuring 15 interactive projects that demonstrate mastery of advanced React concepts and modern development practices. Built with Vite for optimal development experience, this project serves as a comprehensive portfolio of React skills including hooks, state management, context patterns, and component architecture. Each mini-project focuses on specific React fundamentals while showcasing clean code practices and modern JavaScript implementation.',
+    technologies: ['React', 'JavaScript ES6+', 'Vite', 'CSS3', 'HTML5', 'React Hooks', 'Context API', 'React Router', 'Component Architecture', 'Modern Web Standards'],
+    features: [
+      'Interactive showcase of 15 React concept demonstrations',
+      'Advanced React hooks implementation (useState, useEffect, useRef, useContext, useReducer)',
+      'Modern state management patterns and best practices',
+      'Context API and reducer patterns for complex state handling',
+      'Conditional rendering and dynamic component behavior',
+      'Form handling and user interaction patterns',
+      'React Router integration for navigation',
+      'Vite build system for fast development and optimal bundling',
+      'Clean, modular component architecture',
+      'Educational code structure ideal for learning and reference'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/03-advanced-react',
+    liveUrl: 'https://react-udemy-project.netlify.app/',
+    imageUrl: '/14.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Mastered 15 advanced React concepts through hands-on implementation',
+      'Demonstrated modern React hooks and state management patterns',
+      'Built educational showcase with clean, reusable component architecture',
+      'Applied Vite for optimized development workflow and performance'
     ]
   }
 ];
