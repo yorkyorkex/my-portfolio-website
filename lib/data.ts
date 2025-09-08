@@ -315,6 +315,35 @@ export const volunteerWork: VolunteerWork[] = [
 // Real projects showcase
 export const projects: Project[] = [
   {
+    id: 'ai-media-translation',
+    title: 'AI-Powered Media Translation & Dubbing Platform',
+    description: 'An AI-driven platform enabling media translation, multilingual dubbing, and customized video playbook for global audiences.',
+    longDescription: 'A comprehensive AI-powered platform that revolutionizes media localization through automated translation, natural-sounding multilingual dubbing, and customizable video playback experiences. Built for Braiv Tech to serve global media companies seeking efficient, high-quality localization solutions.',
+    technologies: ['Next.js', 'TypeScript', 'Firebase', 'Google Cloud', 'RESTful API', 'CI/CD', 'Mux API', 'ElevenLabs AI Dubbing', 'Video Player Customization', 'UI/UX Design'],
+    features: [
+      'Responsive multilingual UI with real-time sync via Firebase/Google Cloud',
+      'Custom video player themes using Mux API with branded playback',
+      'Advanced caption and highlight color customization',
+      'Translation API integration supporting multiple languages',
+      'Document formatting preservation during translation',
+      'AI-powered dubbing via ElevenLabs for natural-sounding voiceovers',
+      'Optimized deployment pipelines for faster releases',
+      'Performance-optimized API for smooth playback experience'
+    ],
+    githubUrl: undefined,
+    liveUrl: 'https://www.braiv.co/',
+    liveLabel: 'Product Website',
+    imageUrl: '/1.png',
+    category: 'fullstack',
+    status: 'completed',
+    highlights: [
+      'Built responsive multilingual UI with real-time sync',
+      'Developed custom video player themes with branded playback',
+      'Integrated AI-powered dubbing for natural multilingual voiceovers',
+      'Optimized deployment and API performance for production'
+    ]
+  },
+  {
     id: 'backroads-explorer',
     title: 'BackRoads Explorer - Travel & Tourism Website',
     description: 'Modern travel website showcasing destinations and experiences with responsive React architecture',
@@ -488,35 +517,6 @@ export const projects: Project[] = [
       'Implemented advanced Model Context Protocol (MCP) server',
       'Created AI-assisted dice system for enhanced gaming experience',
       'Developed comprehensive testing interface with real-time AI feedback'
-    ]
-  },
-  {
-    id: 'ai-media-translation',
-    title: 'AI-Powered Media Translation & Dubbing Platform',
-    description: 'An AI-driven platform enabling media translation, multilingual dubbing, and customized video playbook for global audiences.',
-    longDescription: 'A comprehensive AI-powered platform that revolutionizes media localization through automated translation, natural-sounding multilingual dubbing, and customizable video playback experiences. Built for Braiv Tech to serve global media companies seeking efficient, high-quality localization solutions.',
-    technologies: ['Next.js', 'TypeScript', 'Firebase', 'Google Cloud', 'RESTful API', 'CI/CD', 'Mux API', 'ElevenLabs AI Dubbing', 'Video Player Customization', 'UI/UX Design'],
-    features: [
-      'Responsive multilingual UI with real-time sync via Firebase/Google Cloud',
-      'Custom video player themes using Mux API with branded playback',
-      'Advanced caption and highlight color customization',
-      'Translation API integration supporting multiple languages',
-      'Document formatting preservation during translation',
-      'AI-powered dubbing via ElevenLabs for natural-sounding voiceovers',
-      'Optimized deployment pipelines for faster releases',
-      'Performance-optimized API for smooth playback experience'
-    ],
-    githubUrl: undefined,
-    liveUrl: 'https://www.braiv.co/',
-    liveLabel: 'Product Website',
-    imageUrl: '/1.png',
-    category: 'fullstack',
-    status: 'completed',
-    highlights: [
-      'Built responsive multilingual UI with real-time sync',
-      'Developed custom video player themes with branded playback',
-      'Integrated AI-powered dubbing for natural multilingual voiceovers',
-      'Optimized deployment and API performance for production'
     ]
   },
   {
