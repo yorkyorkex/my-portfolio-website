@@ -316,6 +316,7 @@ export const volunteerWork: VolunteerWork[] = [
 export const projects: Project[] = [
   {
     id: 'ai-media-translation',
+    number: 1,
     title: 'AI-Powered Media Translation & Dubbing Platform',
     description: 'An AI-driven platform enabling media translation, multilingual dubbing, and customized video playbook for global audiences.',
     longDescription: 'A comprehensive AI-powered platform that revolutionizes media localization through automated translation, natural-sounding multilingual dubbing, and customizable video playback experiences. Built for Braiv Tech to serve global media companies seeking efficient, high-quality localization solutions.',
@@ -345,6 +346,7 @@ export const projects: Project[] = [
   },
   {
     id: 'backroads-explorer',
+    number: 2,
     title: 'BackRoads Explorer - Travel & Tourism Website',
     description: 'Modern travel website showcasing destinations and experiences with responsive React architecture',
     longDescription: 'A comprehensive travel and tourism platform built with React.js, designed to inspire wanderlust and showcase beautiful destinations. Features responsive design, interactive user interface, and optimized performance for seamless browsing across all devices. Built with Create React App and deployed on Netlify for reliable hosting and fast global access.',
@@ -374,6 +376,7 @@ export const projects: Project[] = [
   },
   {
     id: 'chatconnect-messaging-app',
+    number: 3,
     title: 'ChatConnect - Real-Time Messaging Application',
     description: 'Modern WhatsApp-inspired messaging application built with React, featuring real-time chat functionality and responsive design',
     longDescription: 'A feature-rich real-time messaging application inspired by WhatsApp, built with React and modern web technologies. Designed to demonstrate proficiency in building complex user interfaces, state management, and interactive communication features. Features a clean, intuitive interface that replicates the familiar messaging experience with modern web standards.',
@@ -403,6 +406,7 @@ export const projects: Project[] = [
   },
   {
     id: 'reactcraft-studio',
+    number: 4,
     title: 'ReactCraft Studio - E-Book Store',
     description: 'Interactive e-book store built with React fundamentals, demonstrating core React concepts and modern web development practices',
     longDescription: 'A comprehensive e-book store application showcasing fundamental React development skills and modern web application architecture. Built as part of a React course curriculum, this project demonstrates mastery of React components, state management, event handling, and responsive design. Features an intuitive user interface for browsing and managing digital book collections with clean, professional design.',
@@ -432,6 +436,7 @@ export const projects: Project[] = [
   },
   {
     id: 'nova-ai-chat-assistant',
+    number: 5,
     title: 'Nova Chat - Intelligent AI Assistant',
     description: 'Versatile AI chatbot with neon UI design, enabling seamless conversations across multiple domains from travel planning to code analysis',
     longDescription: 'An intelligent AI-powered chat assistant built with modern web technologies and integrated with advanced language models. Nova Chat features a sleek neon-themed interface and provides versatile conversational AI capabilities, supporting everything from travel planning and creative brainstorming to technical code explanations and content rewriting. Built for speed and user experience with Next.js and Vercel AI SDK.',
@@ -462,6 +467,7 @@ export const projects: Project[] = [
   },
   {
     id: 'propertyhub-rental-platform',
+    number: 6,
     title: 'PropertyHub - Modern E-Commerce Rental Platform',
     description: 'Full-stack rental property platform with advanced search, favorites, and landlord contact features',
     longDescription: 'A comprehensive e-commerce rental platform built with Next.js and TypeScript, designed to streamline property rental processes. Features advanced property search and filtering, user favorites management, responsive design, and direct landlord communication. Built with modern web technologies and optimized for excellent user experience across all devices.',
@@ -491,6 +497,7 @@ export const projects: Project[] = [
   },
   {
     id: 'ai-dice-agent-mcp',
+    number: 7,
     title: 'AI Dice Agent - MCP Server for Claude Desktop',
     description: 'Intelligent AI agent providing dice rolling functionality through Model Context Protocol for Claude Desktop applications',
     longDescription: 'An advanced AI agent built as a Model Context Protocol (MCP) server that seamlessly integrates with Claude Desktop to provide intelligent dice rolling capabilities. Designed for tabletop gaming, probability simulations, and random number generation with AI-assisted decision making. Features comprehensive dice support, interactive web interface, and smart gaming assistance.',
@@ -521,6 +528,7 @@ export const projects: Project[] = [
   },
   {
     id: 'wizard-budget',
+    number: 8,
     title: 'Wizard Budget – Cross-Platform Personal Finance Management Mobile App',
     description: 'A cross-platform mobile application for tracking income and expenses, budgeting, and visualizing personal finance trends with secure MySQL-powered data management.',
     longDescription: 'A comprehensive personal finance management app designed for cross-platform mobile use. Features secure user authentication, persistent data storage, and interactive financial dashboards. Built with React Native and Expo for optimal mobile performance and user experience.',
@@ -549,6 +557,7 @@ export const projects: Project[] = [
   },
   {
     id: 'interactive-3d-building',
+    number: 9,
     title: 'Interactive 3D Building Visualization & AR/VR Simulation Platform',
     description: 'An immersive 3D building visualization system with BIM/IFC integration and AR/VR simulation using Tilt Five.',
     longDescription: 'A cutting-edge 3D visualization platform that transforms architectural data into immersive interactive experiences. Features comprehensive BIM/IFC integration for accurate building representation and revolutionary AR/VR simulation capabilities using Tilt Five hardware for unprecedented architectural visualization.',
@@ -580,6 +589,7 @@ export const projects: Project[] = [
   },
   {
     id: 'entertainer-website',
+    number: 10,
     title: 'Personal Website of an Entertainer',
     description: 'Professional website for a Korean entertainer showcasing music, acting career, and fan engagement',
     longDescription: 'A beautifully designed personal website for IU (Lee Ji-eun), a Korean artist. Features elegant design with gradient backgrounds, professional portfolio sections, and multimedia content showcase. Built with modern web technologies and optimized for fan engagement.',
@@ -608,6 +618,7 @@ export const projects: Project[] = [
   },
   {
     id: 'team-project-management',
+    number: 11,
     title: 'Team Project Management System',
     description: 'Comprehensive project management application for team collaboration',
     longDescription: 'A full-stack project management system designed for teams to collaborate effectively. Features real-time updates, task management, team communication, and project tracking with modern UI/UX design.',
@@ -636,6 +647,7 @@ export const projects: Project[] = [
   },
   {
     id: 'reviews-carousel-react',
+    number: 12,
     title: 'Reviews Carousel - Interactive Customer Testimonials',
     description: 'Dynamic React application featuring an interactive reviews carousel with seamless navigation and random selection functionality',
     longDescription: 'An elegant customer reviews carousel built with React to demonstrate advanced state management and user interaction patterns. Features smooth navigation through testimonials, random review discovery, and responsive design. Built to showcase mastery of React fundamentals including array manipulation, state control, and component-based architecture while creating an engaging user experience for customer feedback display.',
@@ -666,6 +678,7 @@ export const projects: Project[] = [
   },
   {
     id: 'tours-explorer-react',
+    number: 13,
     title: 'Tours Explorer - Interactive Travel Showcase',
     description: 'Dynamic React application for exploring and managing tour information with API integration and interactive features',
     longDescription: 'A comprehensive tour management React application showcasing advanced React concepts through real-world travel industry functionality. Features dynamic API data fetching, interactive tour management, and responsive design. Built to demonstrate proficiency in React state management, component lifecycle, user interactions, and modern JavaScript practices with a focus on practical travel booking interface design.',
@@ -696,6 +709,7 @@ export const projects: Project[] = [
   },
   {
     id: 'birthday-buddy-react',
+    number: 14,
     title: 'Birthday Buddy - React Fundamentals Showcase',
     description: 'Interactive React application for managing birthday lists, demonstrating core React concepts and state management',
     longDescription: 'A clean, educational React application built to demonstrate fundamental React concepts through a practical birthday management interface. Features dynamic state management, component composition, and responsive design while teaching essential React skills through hands-on implementation. Built with Vite for optimal development experience and modern JavaScript practices.',
@@ -725,6 +739,7 @@ export const projects: Project[] = [
   },
   {
     id: 'task-management-mobile',
+    number: 15,
     title: 'Task Management Mobile Application',
     description: 'Mobile-optimized task management application with modern UX',
     longDescription: 'A mobile-first task management application built with modern web technologies. Features intuitive touch interface, offline capability, and seamless task organization for productivity on-the-go.',
@@ -753,6 +768,7 @@ export const projects: Project[] = [
   },
   {
     id: 'portfolio-website',
+    number: 16,
     title: 'Portfolio Website',
     description: 'Professional portfolio website showcasing development skills and experience',
     longDescription: 'A modern, responsive portfolio website built with Next.js and TypeScript. Features dark mode, dynamic skills showcase, and comprehensive project documentation. Optimized for performance and SEO with clean, professional design.',
@@ -780,6 +796,7 @@ export const projects: Project[] = [
   },
   {
     id: 'advanced-react-mastery',
+    number: 17,
     title: 'Advanced React Mastery - Interactive Learning Showcase',
     description: 'Comprehensive React learning project demonstrating 15 advanced concepts through interactive examples and hands-on implementations',
     longDescription: 'An extensive React learning showcase featuring 15 interactive projects that demonstrate mastery of advanced React concepts and modern development practices. Built with Vite for optimal development experience, this project serves as a comprehensive portfolio of React skills including hooks, state management, context patterns, and component architecture. Each mini-project focuses on specific React fundamentals while showcasing clean code practices and modern JavaScript implementation.',

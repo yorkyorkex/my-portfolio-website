@@ -22,6 +22,7 @@ export interface Education {
 
 export interface Project {
   id: string;
+  number: number;
   title: string;
   description: string;
   longDescription?: string;
