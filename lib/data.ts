@@ -663,33 +663,33 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 'advanced-react-mastery',
-    title: 'Advanced React Mastery - Interactive Learning Showcase',
-    description: 'Comprehensive React learning project demonstrating 15 advanced concepts through interactive examples and hands-on implementations',
-    longDescription: 'An extensive React learning showcase featuring 15 interactive projects that demonstrate mastery of advanced React concepts and modern development practices. Built with Vite for optimal development experience, this project serves as a comprehensive portfolio of React skills including hooks, state management, context patterns, and component architecture. Each mini-project focuses on specific React fundamentals while showcasing clean code practices and modern JavaScript implementation.',
-    technologies: ['React', 'JavaScript ES6+', 'Vite', 'CSS3', 'HTML5', 'React Hooks', 'Context API', 'React Router', 'Component Architecture', 'Modern Web Standards'],
+    id: 'tours-explorer-react',
+    title: 'Tours Explorer - Interactive Travel Showcase',
+    description: 'Dynamic React application for exploring and managing tour information with API integration and interactive features',
+    longDescription: 'A comprehensive tour management React application showcasing advanced React concepts through real-world travel industry functionality. Features dynamic API data fetching, interactive tour management, and responsive design. Built to demonstrate proficiency in React state management, component lifecycle, user interactions, and modern JavaScript practices with a focus on practical travel booking interface design.',
+    technologies: ['React', 'JavaScript ES6+', 'Vite', 'Fetch API', 'CSS3', 'HTML5', 'React Hooks', 'State Management', 'Component Architecture', 'API Integration'],
     features: [
-      'Interactive showcase of 15 React concept demonstrations',
-      'Advanced React hooks implementation (useState, useEffect, useRef, useContext, useReducer)',
-      'Modern state management patterns and best practices',
-      'Context API and reducer patterns for complex state handling',
-      'Conditional rendering and dynamic component behavior',
-      'Form handling and user interaction patterns',
-      'React Router integration for navigation',
-      'Vite build system for fast development and optimal bundling',
-      'Clean, modular component architecture',
-      'Educational code structure ideal for learning and reference'
+      'Dynamic tour data fetching from external API',
+      'Interactive tour list with individual management capabilities',
+      'Remove tour functionality with state updates',
+      'Expandable tour descriptions with "Read More" feature',
+      'Loading state handling with dedicated components',
+      'Re-fetch functionality for data refresh',
+      'Responsive design optimized for travel browsing',
+      'Component-based architecture (App, Tours, Tour, Loading)',
+      'Modern React patterns and best practices',
+      'User-friendly travel interface design'
     ],
-    githubUrl: 'https://github.com/yorkyorkex/03-advanced-react',
-    liveUrl: 'https://react-udemy-project.netlify.app/',
-    imageUrl: '/14.png',
+    githubUrl: 'https://github.com/yorkyorkex/02-tours',
+    liveUrl: 'https://02-tours-york.netlify.app/',
+    imageUrl: '/16.png',
     category: 'web',
     status: 'completed',
     highlights: [
-      'Mastered 15 advanced React concepts through hands-on implementation',
-      'Demonstrated modern React hooks and state management patterns',
-      'Built educational showcase with clean, reusable component architecture',
-      'Applied Vite for optimized development workflow and performance'
+      'Built interactive tour management system with React fundamentals',
+      'Implemented API data fetching with loading states and error handling',
+      'Created dynamic user interactions for tour exploration and management',
+      'Applied modern JavaScript and component-based architecture patterns'
     ]
   },
   {
