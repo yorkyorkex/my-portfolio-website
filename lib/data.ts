@@ -693,30 +693,32 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 'portfolio-website',
-    title: 'Portfolio Website',
-    description: 'Professional portfolio website showcasing development skills and experience',
-    longDescription: 'A modern, responsive portfolio website built with Next.js and TypeScript. Features dark mode, dynamic skills showcase, and comprehensive project documentation. Optimized for performance and SEO with clean, professional design.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React', 'Vercel'],
+    id: 'birthday-buddy-react',
+    title: 'Birthday Buddy - React Fundamentals Showcase',
+    description: 'Interactive React application for managing birthday lists, demonstrating core React concepts and state management',
+    longDescription: 'A clean, educational React application built to demonstrate fundamental React concepts through a practical birthday management interface. Features dynamic state management, component composition, and responsive design while teaching essential React skills through hands-on implementation. Built with Vite for optimal development experience and modern JavaScript practices.',
+    technologies: ['React', 'Vite', 'JavaScript ES6+', 'CSS3', 'HTML5', 'React Hooks', 'State Management', 'Component Architecture', 'Responsive Design'],
     features: [
-      'Dark mode by default with theme toggle',
-      'Dynamic skills showcase with 60+ technologies',
-      'Responsive design optimized for all devices',
-      'Performance optimized with Next.js',
-      'SEO optimization and metadata',
-      'Interactive animations and transitions',
-      'Professional typography and design system'
+      'Dynamic birthday list management with React state',
+      'Interactive person cards with responsive image rendering',
+      'Real-time counter showing number of people in the list',
+      'Clear all functionality with state reset',
+      'Component-based architecture demonstrating React best practices',
+      'Modern JavaScript ES6+ features and React hooks',
+      'Clean, intuitive user interface design',
+      'Vite build system for fast development and optimal performance',
+      'Educational code structure ideal for learning React fundamentals'
     ],
-    githubUrl: 'https://github.com/yorkyorkex/my-portfolio-website',
-    liveUrl: 'https://my-portfolio-website-livid-two.vercel.app/',
-    imageUrl: '/7.png',
+    githubUrl: 'https://github.com/yorkyorkex/01-birthday-buddy',
+    liveUrl: 'https://01-birthday-buddy-york.netlify.app/',
+    imageUrl: '/15.png',
     category: 'web',
     status: 'completed',
     highlights: [
-      'Modern Next.js 14 architecture',
-      'Comprehensive skill showcase',
-      'Professional design system',
-      'Performance optimized'
+      'Mastered React fundamentals through practical birthday list implementation',
+      'Demonstrated state management and component composition patterns',
+      'Built educational showcase with clean, reusable React components',
+      'Applied modern JavaScript and Vite for optimized development workflow'
     ]
   }
 ];
