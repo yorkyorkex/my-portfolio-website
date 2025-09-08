@@ -22,7 +22,8 @@
       "WebFetch(domain:chatbot-beige-one-96.vercel.app)",
       "WebFetch(domain:react-course-project-sooty.vercel.app)",
       "WebFetch(domain:backroads-app-york.netlify.app)",
-      "WebFetch(domain:whats-app-york.netlify.app)"
+      "WebFetch(domain:whats-app-york.netlify.app)",
+      "WebFetch(domain:react-udemy-project.netlify.app)"
     ],
     "deny": []
   }
