@@ -824,6 +824,37 @@ export const projects: Project[] = [
       'Built educational showcase with clean, reusable component architecture',
       'Applied Vite for optimized development workflow and performance'
     ]
+  },
+  {
+    id: 'accordion-q-and-a-react',
+    number: 18,
+    title: 'Accordion Q&A - Interactive FAQ Component',
+    description: 'Dynamic React accordion component for FAQ sections with expand/collapse functionality and advanced single-question display mode',
+    longDescription: 'An interactive FAQ accordion component built with React to demonstrate advanced state management and user interface patterns. Features dynamic question/answer toggling, conditional rendering, and an optional single-question display mode. Built to showcase mastery of React hooks, component composition, and interactive UI design while creating an engaging user experience for content organization and display.',
+    technologies: ['React', 'JavaScript ES6+', 'Vite', 'CSS3', 'HTML5', 'React Hooks', 'State Management', 'Component Architecture', 'Conditional Rendering'],
+    features: [
+      'Interactive question/answer toggle functionality with smooth transitions',
+      'Dynamic rendering of FAQ data from imported array',
+      'Individual question expand/collapse with state management',
+      'Optional advanced single-question display mode',
+      'Responsive design optimized for all devices',
+      'Clean, accessible UI with semantic markup',
+      'React useState hook for component state control',
+      'Reusable SingleQuestion component architecture',
+      'Conditional rendering for show/hide answer functionality',
+      'Professional FAQ interface design for content organization'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/04-accordion',
+    liveUrl: 'https://benevolent-bublanina-8df163.netlify.app/',
+    imageUrl: '/18.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Built interactive FAQ accordion with React state management',
+      'Implemented dynamic toggle functionality with conditional rendering',
+      'Created reusable component architecture with SingleQuestion components',
+      'Demonstrated advanced React patterns with optional single-question display mode'
+    ]
   }
 ];
 

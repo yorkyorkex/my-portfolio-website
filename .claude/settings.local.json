@@ -25,7 +25,8 @@
       "WebFetch(domain:whats-app-york.netlify.app)",
       "WebFetch(domain:react-udemy-project.netlify.app)",
       "WebFetch(domain:02-tours-york.netlify.app)",
-      "WebFetch(domain:03-reviews-york.netlify.app)"
+      "WebFetch(domain:03-reviews-york.netlify.app)",
+      "WebFetch(domain:benevolent-bublanina-8df163.netlify.app)"
     ],
     "deny": []
   }
