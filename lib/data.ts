@@ -917,6 +917,37 @@ export const projects: Project[] = [
       'Created dynamic job information display with UUID integration',
       'Demonstrated advanced React hooks and component composition patterns'
     ]
+  },
+  {
+    id: 'image-slider-carousel-react',
+    number: 21,
+    title: 'Interactive Image Slider - Dynamic Carousel Component',
+    description: 'Responsive React image carousel with smooth transitions, navigation controls, and multiple data configuration options for dynamic content display',
+    longDescription: 'A sophisticated image slider component built with React showcasing advanced carousel functionality and user interaction patterns. Features smooth CSS transform-based transitions, intuitive navigation controls, and flexible data configuration supporting multiple array sizes. Demonstrates mastery of React state management, event handling, and CSS animations to create an engaging, responsive user experience for image galleries and content showcases.',
+    technologies: ['React', 'JavaScript ES6+', 'Vite', 'CSS3', 'HTML5', 'React Hooks', 'Transform Animations', 'State Management', 'Event Handling', 'Responsive Design'],
+    features: [
+      'Smooth CSS transform-based slide transitions with translateX animations',
+      'Interactive navigation with previous/next button controls',
+      'Dynamic rendering from multiple data arrays (shortList, list, longList)',
+      'React useState hook for current slide position tracking',
+      'Responsive design optimized for all screen sizes',
+      'Programmatic slide navigation and position control',
+      'Clean component architecture with reusable slider logic',
+      'Event handling for user interactions and navigation',
+      'Professional carousel UI with intuitive user experience',
+      'Flexible data structure supporting various content types'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/07-slider',
+    liveUrl: 'https://07-slider-york.netlify.app/',
+    imageUrl: '/21.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Mastered CSS transform animations for smooth slider transitions',
+      'Implemented flexible data configuration with multiple array support',
+      'Built intuitive navigation controls with React state management',
+      'Created responsive carousel component with professional UX design'
+    ]
   }
 ];
 
