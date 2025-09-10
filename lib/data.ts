@@ -886,6 +886,37 @@ export const projects: Project[] = [
       'Created component-based architecture with efficient prop handling',
       'Demonstrated advanced data filtering and transformation techniques'
     ]
+  },
+  {
+    id: 'tabs-experience-showcase',
+    number: 20,
+    title: 'TabsNavigator - Interactive Job Experience Showcase',
+    description: 'Dynamic React tabs component displaying job experience information with API integration, loading states, and smooth navigation',
+    longDescription: 'A sophisticated job experience showcase built with React to demonstrate advanced state management, asynchronous data handling, and interactive tab navigation. Features dynamic job information display, API data fetching with loading states, and unique ID generation using UUID. Built to showcase mastery of React hooks, component composition, and real-world data integration while creating an engaging professional experience presentation.',
+    technologies: ['React', 'JavaScript ES6+', 'Fetch API', 'UUID Library', 'React Hooks', 'State Management', 'Component Architecture', 'Async/Await', 'Loading States'],
+    features: [
+      'Dynamic job information display with interactive tab navigation',
+      'Asynchronous data fetching from external API with loading states',
+      'React useState and useEffect hooks for state management',
+      'Unique ID generation using UUID library for data integrity',
+      'Job duties rendering with dedicated component architecture',
+      'Smooth tab switching between different job entries',
+      'Professional job details display (company, dates, title, duties)',
+      'Responsive design optimized for professional portfolios',
+      'Clean, modular component structure for maintainability',
+      'Error handling and loading state management'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/06-tabs',
+    liveUrl: 'https://06-tabs-york.netlify.app/',
+    imageUrl: '/20.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Built interactive job experience showcase with React tabs navigation',
+      'Implemented asynchronous API data fetching with loading states',
+      'Created dynamic job information display with UUID integration',
+      'Demonstrated advanced React hooks and component composition patterns'
+    ]
   }
 ];
 
