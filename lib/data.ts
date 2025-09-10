@@ -855,6 +855,37 @@ export const projects: Project[] = [
       'Created reusable component architecture with SingleQuestion components',
       'Demonstrated advanced React patterns with optional single-question display mode'
     ]
+  },
+  {
+    id: 'menu-filter-react',
+    number: 19,
+    title: 'MenuCraft - Dynamic Restaurant Menu Filtering System',
+    description: 'Interactive React menu application with dynamic filtering, category management, and responsive design for restaurant interfaces',
+    longDescription: 'A sophisticated restaurant menu filtering application built with React to demonstrate advanced state management, data manipulation, and user interface design. Features dynamic category-based filtering, unique category extraction using JavaScript Set objects, and responsive design. Built to showcase mastery of React components, props handling, and practical data filtering techniques while creating an engaging culinary browsing experience.',
+    technologies: ['React', 'JavaScript ES6+', 'Vite', 'CSS3', 'HTML5', 'React Hooks', 'State Management', 'Component Architecture', 'Data Filtering', 'Set Objects'],
+    features: [
+      'Dynamic menu item rendering with responsive grid layout',
+      'Category-based filtering with interactive button controls',
+      'Unique category extraction using JavaScript Set objects',
+      'All items view and category-specific filtering',
+      'Component-based architecture (Title, Menu, MenuItem, Categories)',
+      'React useState for dynamic state management',
+      'Prop passing between parent and child components',
+      'Responsive design optimized for restaurant displays',
+      'Clean, professional UI design for culinary presentation',
+      'Efficient data transformation and filtering algorithms'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/05-menu',
+    liveUrl: 'https://visionary-quokka-7e8d54.netlify.app/',
+    imageUrl: '/19.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Built dynamic menu filtering system with React state management',
+      'Implemented unique category extraction using JavaScript Set objects',
+      'Created component-based architecture with efficient prop handling',
+      'Demonstrated advanced data filtering and transformation techniques'
+    ]
   }
 ];
 
