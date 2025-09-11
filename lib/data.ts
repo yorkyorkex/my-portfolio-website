@@ -948,6 +948,37 @@ export const projects: Project[] = [
       'Built intuitive navigation controls with React state management',
       'Created responsive carousel component with professional UX design'
     ]
+  },
+  {
+    id: 'lorem-ipsum-generator',
+    number: 22,
+    title: 'Lorem Ipsum Text Generator - Dynamic Content Creation Tool',
+    description: 'Interactive React text generation tool for creating Lorem Ipsum placeholder content with customizable paragraph controls',
+    longDescription: 'A practical Lorem Ipsum text generator built with React to demonstrate form handling, state management, and dynamic content generation. Features customizable paragraph count selection with validation, array-based text generation, and responsive design. Built to showcase mastery of React controlled components, user input handling, and practical utility application development for web designers and developers.',
+    technologies: ['React', 'JavaScript ES6+', 'Vite', 'CSS3', 'HTML5', 'React Hooks', 'Form Handling', 'State Management', 'Input Validation', 'Array Manipulation'],
+    features: [
+      'Dynamic Lorem Ipsum text generation with customizable paragraph count',
+      'Interactive form with number input validation and range controls',
+      'React controlled components for user input handling',
+      'Dynamic content rendering based on user specifications',
+      'Responsive design optimized for various screen sizes',
+      'Professional utility interface for web development workflow',
+      'Real-time text generation without page refresh',
+      'Clean, minimalist design focusing on functionality',
+      'Array-based paragraph generation with consistent formatting',
+      'Input validation ensuring proper paragraph count limits'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/08-lorem-ipsum',
+    liveUrl: 'https://08-lorem-ipsum-york.netlify.app/',
+    imageUrl: '/22.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Built practical text generation utility with React form handling',
+      'Implemented controlled components with input validation',
+      'Created dynamic content generation based on user specifications',
+      'Demonstrated array manipulation and responsive utility design'
+    ]
   }
 ];
 
