@@ -345,8 +345,70 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 'backroads-explorer',
+    id: 'crewai-travel-planner',
     number: 2,
+    title: 'AI Travel Planner - Multi-Agent Trip Orchestration System',
+    description: 'Intelligent multi-agent travel planning system powered by CrewAI, delivering personalized itineraries through collaborative AI agents',
+    longDescription: 'An innovative AI-powered travel planning system built with CrewAI framework that revolutionizes trip planning through collaborative multi-agent intelligence. Features specialized AI agents working together to create personalized travel itineraries, research destinations, find accommodations, and optimize travel routes. Built to showcase expertise in advanced AI orchestration, agent-based systems, and practical AI applications for real-world travel industry solutions.',
+    technologies: ['Python', 'CrewAI Framework', 'Multi-Agent Systems', 'AI Orchestration', 'Travel APIs', 'Natural Language Processing', 'Machine Learning', 'Agent Collaboration', 'Trip Planning Logic', 'API Integration'],
+    features: [
+      'Intelligent multi-agent travel planning orchestration',
+      'Specialized AI agents for different travel planning aspects',
+      'Collaborative agent workflows for comprehensive trip research',
+      'Personalized itinerary generation based on preferences',
+      'Destination research and recommendation system',
+      'Accommodation and activity discovery through agent collaboration',
+      'Travel route optimization with multi-agent coordination',
+      'Real-time travel information integration and processing',
+      'Advanced prompt engineering for travel-specific AI responses',
+      'Scalable agent architecture for complex travel planning scenarios'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/trip_planner_from_scratch',
+    liveUrl: undefined,
+    imageUrl: '/25.png',
+    category: 'backend',
+    status: 'completed',
+    highlights: [
+      'Built intelligent multi-agent travel planning system with CrewAI',
+      'Created specialized AI agents for comprehensive trip orchestration',
+      'Developed collaborative workflows for personalized travel itineraries',
+      'Demonstrated advanced AI agent coordination for real-world applications'
+    ]
+  },
+  {
+    id: 'crewai-multi-agent-system',
+    number: 3,
+    title: 'CrewAI Multi-Agent Intelligence Hub',
+    description: 'Advanced multi-agent AI orchestration system integrating Ollama, Gemini, and OpenAI models for collaborative AI workflows',
+    longDescription: 'A sophisticated multi-agent AI system built with CrewAI framework to demonstrate advanced artificial intelligence orchestration and collaborative agent workflows. Features seamless integration of multiple AI models including Ollama for local inference, Google Gemini for multimodal capabilities, and OpenAI for advanced reasoning. Built to showcase expertise in cutting-edge AI development, agent-based systems, and modern Python AI frameworks for complex problem-solving scenarios.',
+    technologies: ['Python', 'CrewAI Framework', 'Ollama', 'Google Gemini', 'OpenAI API', 'Multi-Agent Systems', 'AI Orchestration', 'LangChain', 'Machine Learning', 'Natural Language Processing'],
+    features: [
+      'Multi-agent AI orchestration using CrewAI framework',
+      'Integration with Ollama for local AI model inference',
+      'Google Gemini API integration for multimodal AI capabilities',
+      'OpenAI GPT integration for advanced reasoning and analysis',
+      'Collaborative agent workflows with role-based specialization',
+      'Advanced prompt engineering and chain-of-thought reasoning',
+      'Scalable agent communication and task distribution',
+      'Python-based AI development with modern frameworks',
+      'Flexible model switching and API optimization',
+      'Comprehensive AI workflow automation and management'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/crewai-tt',
+    liveUrl: undefined,
+    imageUrl: '/24.png',
+    category: 'backend',
+    status: 'completed',
+    highlights: [
+      'Built advanced multi-agent AI system with CrewAI framework',
+      'Integrated multiple AI models: Ollama, Gemini, and OpenAI',
+      'Demonstrated expertise in cutting-edge AI orchestration',
+      'Created collaborative agent workflows for complex problem-solving'
+    ]
+  },
+  {
+    id: 'backroads-explorer',
+    number: 4,
     title: 'BackRoads Explorer - Travel & Tourism Website',
     description: 'Modern travel website showcasing destinations and experiences with responsive React architecture',
     longDescription: 'A comprehensive travel and tourism platform built with React.js, designed to inspire wanderlust and showcase beautiful destinations. Features responsive design, interactive user interface, and optimized performance for seamless browsing across all devices. Built with Create React App and deployed on Netlify for reliable hosting and fast global access.',
@@ -376,7 +438,7 @@ export const projects: Project[] = [
   },
   {
     id: 'chatconnect-messaging-app',
-    number: 3,
+    number: 5,
     title: 'ChatConnect - Real-Time Messaging Application',
     description: 'Modern WhatsApp-inspired messaging application built with React, featuring real-time chat functionality and responsive design',
     longDescription: 'A feature-rich real-time messaging application inspired by WhatsApp, built with React and modern web technologies. Designed to demonstrate proficiency in building complex user interfaces, state management, and interactive communication features. Features a clean, intuitive interface that replicates the familiar messaging experience with modern web standards.',
@@ -406,7 +468,7 @@ export const projects: Project[] = [
   },
   {
     id: 'reactcraft-studio',
-    number: 4,
+    number: 6,
     title: 'ReactCraft Studio - E-Book Store',
     description: 'Interactive e-book store built with React fundamentals, demonstrating core React concepts and modern web development practices',
     longDescription: 'A comprehensive e-book store application showcasing fundamental React development skills and modern web application architecture. Built as part of a React course curriculum, this project demonstrates mastery of React components, state management, event handling, and responsive design. Features an intuitive user interface for browsing and managing digital book collections with clean, professional design.',
@@ -436,7 +498,7 @@ export const projects: Project[] = [
   },
   {
     id: 'nova-ai-chat-assistant',
-    number: 5,
+    number: 7,
     title: 'Nova Chat - Intelligent AI Assistant',
     description: 'Versatile AI chatbot with neon UI design, enabling seamless conversations across multiple domains from travel planning to code analysis',
     longDescription: 'An intelligent AI-powered chat assistant built with modern web technologies and integrated with advanced language models. Nova Chat features a sleek neon-themed interface and provides versatile conversational AI capabilities, supporting everything from travel planning and creative brainstorming to technical code explanations and content rewriting. Built for speed and user experience with Next.js and Vercel AI SDK.',
@@ -467,7 +529,7 @@ export const projects: Project[] = [
   },
   {
     id: 'propertyhub-rental-platform',
-    number: 6,
+    number: 8,
     title: 'PropertyHub - Modern E-Commerce Rental Platform',
     description: 'Full-stack rental property platform with advanced search, favorites, and landlord contact features',
     longDescription: 'A comprehensive e-commerce rental platform built with Next.js and TypeScript, designed to streamline property rental processes. Features advanced property search and filtering, user favorites management, responsive design, and direct landlord communication. Built with modern web technologies and optimized for excellent user experience across all devices.',
@@ -497,7 +559,7 @@ export const projects: Project[] = [
   },
   {
     id: 'ai-dice-agent-mcp',
-    number: 7,
+    number: 9,
     title: 'AI Dice Agent - MCP Server for Claude Desktop',
     description: 'Intelligent AI agent providing dice rolling functionality through Model Context Protocol for Claude Desktop applications',
     longDescription: 'An advanced AI agent built as a Model Context Protocol (MCP) server that seamlessly integrates with Claude Desktop to provide intelligent dice rolling capabilities. Designed for tabletop gaming, probability simulations, and random number generation with AI-assisted decision making. Features comprehensive dice support, interactive web interface, and smart gaming assistance.',
@@ -528,7 +590,7 @@ export const projects: Project[] = [
   },
   {
     id: 'wizard-budget',
-    number: 8,
+    number: 10,
     title: 'Wizard Budget – Cross-Platform Personal Finance Management Mobile App',
     description: 'A cross-platform mobile application for tracking income and expenses, budgeting, and visualizing personal finance trends with secure MySQL-powered data management.',
     longDescription: 'A comprehensive personal finance management app designed for cross-platform mobile use. Features secure user authentication, persistent data storage, and interactive financial dashboards. Built with React Native and Expo for optimal mobile performance and user experience.',
@@ -557,7 +619,7 @@ export const projects: Project[] = [
   },
   {
     id: 'interactive-3d-building',
-    number: 9,
+    number: 11,
     title: 'Interactive 3D Building Visualization & AR/VR Simulation Platform',
     description: 'An immersive 3D building visualization system with BIM/IFC integration and AR/VR simulation using Tilt Five.',
     longDescription: 'A cutting-edge 3D visualization platform that transforms architectural data into immersive interactive experiences. Features comprehensive BIM/IFC integration for accurate building representation and revolutionary AR/VR simulation capabilities using Tilt Five hardware for unprecedented architectural visualization.',
@@ -589,7 +651,7 @@ export const projects: Project[] = [
   },
   {
     id: 'entertainer-website',
-    number: 10,
+    number: 12,
     title: 'Personal Website of an Entertainer',
     description: 'Professional website for a Korean entertainer showcasing music, acting career, and fan engagement',
     longDescription: 'A beautifully designed personal website for IU (Lee Ji-eun), a Korean artist. Features elegant design with gradient backgrounds, professional portfolio sections, and multimedia content showcase. Built with modern web technologies and optimized for fan engagement.',
@@ -618,7 +680,7 @@ export const projects: Project[] = [
   },
   {
     id: 'team-project-management',
-    number: 11,
+    number: 13,
     title: 'Team Project Management System',
     description: 'Comprehensive project management application for team collaboration',
     longDescription: 'A full-stack project management system designed for teams to collaborate effectively. Features real-time updates, task management, team communication, and project tracking with modern UI/UX design.',
@@ -647,7 +709,7 @@ export const projects: Project[] = [
   },
   {
     id: 'reviews-carousel-react',
-    number: 12,
+    number: 14,
     title: 'Reviews Carousel - Interactive Customer Testimonials',
     description: 'Dynamic React application featuring an interactive reviews carousel with seamless navigation and random selection functionality',
     longDescription: 'An elegant customer reviews carousel built with React to demonstrate advanced state management and user interaction patterns. Features smooth navigation through testimonials, random review discovery, and responsive design. Built to showcase mastery of React fundamentals including array manipulation, state control, and component-based architecture while creating an engaging user experience for customer feedback display.',
@@ -678,7 +740,7 @@ export const projects: Project[] = [
   },
   {
     id: 'tours-explorer-react',
-    number: 13,
+    number: 15,
     title: 'Tours Explorer - Interactive Travel Showcase',
     description: 'Dynamic React application for exploring and managing tour information with API integration and interactive features',
     longDescription: 'A comprehensive tour management React application showcasing advanced React concepts through real-world travel industry functionality. Features dynamic API data fetching, interactive tour management, and responsive design. Built to demonstrate proficiency in React state management, component lifecycle, user interactions, and modern JavaScript practices with a focus on practical travel booking interface design.',
@@ -709,7 +771,7 @@ export const projects: Project[] = [
   },
   {
     id: 'birthday-buddy-react',
-    number: 14,
+    number: 16,
     title: 'Birthday Buddy - React Fundamentals Showcase',
     description: 'Interactive React application for managing birthday lists, demonstrating core React concepts and state management',
     longDescription: 'A clean, educational React application built to demonstrate fundamental React concepts through a practical birthday management interface. Features dynamic state management, component composition, and responsive design while teaching essential React skills through hands-on implementation. Built with Vite for optimal development experience and modern JavaScript practices.',
@@ -739,7 +801,7 @@ export const projects: Project[] = [
   },
   {
     id: 'task-management-mobile',
-    number: 15,
+    number: 17,
     title: 'Task Management Mobile Application',
     description: 'Mobile-optimized task management application with modern UX',
     longDescription: 'A mobile-first task management application built with modern web technologies. Features intuitive touch interface, offline capability, and seamless task organization for productivity on-the-go.',
@@ -768,7 +830,7 @@ export const projects: Project[] = [
   },
   {
     id: 'portfolio-website',
-    number: 16,
+    number: 18,
     title: 'Portfolio Website',
     description: 'Professional portfolio website showcasing development skills and experience',
     longDescription: 'A modern, responsive portfolio website built with Next.js and TypeScript. Features dark mode, dynamic skills showcase, and comprehensive project documentation. Optimized for performance and SEO with clean, professional design.',
@@ -796,7 +858,7 @@ export const projects: Project[] = [
   },
   {
     id: 'advanced-react-mastery',
-    number: 17,
+    number: 19,
     title: 'Advanced React Mastery - Interactive Learning Showcase',
     description: 'Comprehensive React learning project demonstrating 15 advanced concepts through interactive examples and hands-on implementations',
     longDescription: 'An extensive React learning showcase featuring 15 interactive projects that demonstrate mastery of advanced React concepts and modern development practices. Built with Vite for optimal development experience, this project serves as a comprehensive portfolio of React skills including hooks, state management, context patterns, and component architecture. Each mini-project focuses on specific React fundamentals while showcasing clean code practices and modern JavaScript implementation.',
@@ -827,7 +889,7 @@ export const projects: Project[] = [
   },
   {
     id: 'accordion-q-and-a-react',
-    number: 18,
+    number: 20,
     title: 'Accordion Q&A - Interactive FAQ Component',
     description: 'Dynamic React accordion component for FAQ sections with expand/collapse functionality and advanced single-question display mode',
     longDescription: 'An interactive FAQ accordion component built with React to demonstrate advanced state management and user interface patterns. Features dynamic question/answer toggling, conditional rendering, and an optional single-question display mode. Built to showcase mastery of React hooks, component composition, and interactive UI design while creating an engaging user experience for content organization and display.',
@@ -858,7 +920,7 @@ export const projects: Project[] = [
   },
   {
     id: 'menu-filter-react',
-    number: 19,
+    number: 21,
     title: 'MenuCraft - Dynamic Restaurant Menu Filtering System',
     description: 'Interactive React menu application with dynamic filtering, category management, and responsive design for restaurant interfaces',
     longDescription: 'A sophisticated restaurant menu filtering application built with React to demonstrate advanced state management, data manipulation, and user interface design. Features dynamic category-based filtering, unique category extraction using JavaScript Set objects, and responsive design. Built to showcase mastery of React components, props handling, and practical data filtering techniques while creating an engaging culinary browsing experience.',
@@ -889,7 +951,7 @@ export const projects: Project[] = [
   },
   {
     id: 'tabs-experience-showcase',
-    number: 20,
+    number: 22,
     title: 'TabsNavigator - Interactive Job Experience Showcase',
     description: 'Dynamic React tabs component displaying job experience information with API integration, loading states, and smooth navigation',
     longDescription: 'A sophisticated job experience showcase built with React to demonstrate advanced state management, asynchronous data handling, and interactive tab navigation. Features dynamic job information display, API data fetching with loading states, and unique ID generation using UUID. Built to showcase mastery of React hooks, component composition, and real-world data integration while creating an engaging professional experience presentation.',
@@ -920,7 +982,7 @@ export const projects: Project[] = [
   },
   {
     id: 'image-slider-carousel-react',
-    number: 21,
+    number: 23,
     title: 'Interactive Image Slider - Dynamic Carousel Component',
     description: 'Responsive React image carousel with smooth transitions, navigation controls, and multiple data configuration options for dynamic content display',
     longDescription: 'A sophisticated image slider component built with React showcasing advanced carousel functionality and user interaction patterns. Features smooth CSS transform-based transitions, intuitive navigation controls, and flexible data configuration supporting multiple array sizes. Demonstrates mastery of React state management, event handling, and CSS animations to create an engaging, responsive user experience for image galleries and content showcases.',
@@ -951,7 +1013,7 @@ export const projects: Project[] = [
   },
   {
     id: 'lorem-ipsum-generator',
-    number: 22,
+    number: 24,
     title: 'Lorem Ipsum Text Generator - Dynamic Content Creation Tool',
     description: 'Interactive React text generation tool for creating Lorem Ipsum placeholder content with customizable paragraph controls',
     longDescription: 'A practical Lorem Ipsum text generator built with React to demonstrate form handling, state management, and dynamic content generation. Features customizable paragraph count selection with validation, array-based text generation, and responsive design. Built to showcase mastery of React controlled components, user input handling, and practical utility application development for web designers and developers.',
@@ -978,6 +1040,37 @@ export const projects: Project[] = [
       'Implemented controlled components with input validation',
       'Created dynamic content generation based on user specifications',
       'Demonstrated array manipulation and responsive utility design'
+    ]
+  },
+  {
+    id: 'chromacraft-color-generator',
+    number: 25,
+    title: 'ChromaCraft - Advanced Color Palette Generator',
+    description: 'Interactive React color palette generator with custom shade generation, color theory, and design workflow integration',
+    longDescription: 'A sophisticated color palette generator built with React to demonstrate advanced form handling, external library integration, and color theory application. Features intelligent shade generation using the Values.js library, color manipulation algorithms, and practical design workflow tools. Built to showcase mastery of React state management, external API integration, and professional design utility development for web designers and developers.',
+    technologies: ['React', 'JavaScript ES6+', 'Values.js Library', 'Vite', 'CSS3', 'HTML5', 'React Hooks', 'Form Handling', 'Color Theory', 'Design Systems'],
+    features: [
+      'Intelligent color palette generation with customizable shade variations',
+      'Advanced color input handling with hex color validation',
+      'Integration with Values.js library for precise color calculations',
+      'Dynamic shade generation with tint and tone variations',
+      'Interactive color cards with click-to-copy functionality',
+      'Professional color picker interface for design workflows',
+      'Real-time color preview and palette updates',
+      'Responsive design optimized for designer productivity',
+      'Color accessibility and contrast considerations',
+      'Clean, modern interface focused on design professional needs'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/09-color-generator',
+    liveUrl: 'https://09-color-generator-york.netlify.app/',
+    imageUrl: '/23.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Built advanced color palette generator with Values.js integration',
+      'Implemented intelligent shade generation and color theory application',
+      'Created professional design utility with click-to-copy functionality',
+      'Demonstrated external library integration and color manipulation algorithms'
     ]
   }
 ];
