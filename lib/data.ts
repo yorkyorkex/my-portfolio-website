@@ -1072,6 +1072,68 @@ export const projects: Project[] = [
       'Created professional design utility with click-to-copy functionality',
       'Demonstrated external library integration and color manipulation algorithms'
     ]
+  },
+  {
+    id: 'grocery-list-pro',
+    number: 26,
+    title: 'GroceryList Pro - Smart Shopping List Manager',
+    description: 'Interactive React shopping list application with dynamic item management, add/edit/delete functionality, and local storage persistence',
+    longDescription: 'A practical grocery shopping list manager built with React to demonstrate CRUD operations, state management, and local storage integration. Features dynamic item addition and removal, edit functionality with intuitive user interactions, and persistent data storage. Built to showcase mastery of React fundamentals, form handling, and practical application development for everyday productivity tasks.',
+    technologies: ['React', 'JavaScript ES6+', 'CSS3', 'HTML5', 'React Hooks', 'Local Storage', 'State Management', 'Form Handling', 'CRUD Operations', 'Component Architecture'],
+    features: [
+      'Dynamic grocery item management with add/edit/delete functionality',
+      'Interactive shopping list with real-time updates',
+      'Local storage integration for persistent data across sessions',
+      'Intuitive user interface for quick grocery list management',
+      'React useState hooks for component state management',
+      'Form handling with controlled components',
+      'Responsive design optimized for mobile shopping experience',
+      'Clean, minimalist interface focusing on productivity',
+      'Item completion tracking for shopping progress',
+      'Efficient CRUD operations with immediate visual feedback'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/10-grocery-bud',
+    liveUrl: 'https://10-grocery-bud-yorkyorkex.netlify.app/',
+    imageUrl: '/26.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Built practical shopping list manager with React CRUD operations',
+      'Implemented local storage for persistent grocery list data',
+      'Created intuitive mobile-optimized interface for shopping productivity',
+      'Demonstrated form handling and dynamic state management patterns'
+    ]
+  },
+  {
+    id: 'navcraft-responsive-navigation',
+    number: 27,
+    title: 'NavCraft - Responsive Navigation Component System',
+    description: 'Advanced React navigation component with responsive design, mobile hamburger menu, and smooth animations for modern web applications',
+    longDescription: 'A sophisticated navigation component system built with React to demonstrate advanced responsive design patterns, mobile-first navigation solutions, and smooth user interactions. Features responsive breakpoint handling, hamburger menu animations, and clean component architecture. Built to showcase mastery of React state management, CSS media queries, and modern navigation UX patterns essential for professional web development.',
+    technologies: ['React', 'JavaScript ES6+', 'CSS3', 'HTML5', 'React Hooks', 'Responsive Design', 'Mobile Navigation', 'CSS Animations', 'Component Architecture', 'Media Queries'],
+    features: [
+      'Responsive navigation with mobile-first design approach',
+      'Interactive hamburger menu with smooth open/close animations',
+      'Dynamic viewport-based navigation switching',
+      'React useState hooks for navigation state management',
+      'Clean component architecture with reusable navigation logic',
+      'CSS media queries for responsive breakpoint handling',
+      'Touch-friendly mobile navigation interface',
+      'Professional navigation styling with modern design patterns',
+      'Cross-browser compatibility and accessibility features',
+      'Optimized performance with efficient state updates'
+    ],
+    githubUrl: 'https://github.com/yorkyorkex/11-navbar',
+    liveUrl: 'https://11-navbar-yorkyorkex.netlify.app/',
+    imageUrl: '/27.png',
+    category: 'web',
+    status: 'completed',
+    highlights: [
+      'Built responsive navigation system with mobile hamburger menu',
+      'Implemented smooth animations and viewport-based navigation switching',
+      'Created professional component architecture for reusable navigation',
+      'Demonstrated advanced CSS media queries and responsive design patterns'
+    ]
   }
 ];
 
